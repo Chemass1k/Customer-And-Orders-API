@@ -58,5 +58,19 @@ namespace Customer_And_Orders.BAL.Services
                 return false;
             }
         }
+    
+        public async Task<(string AccessToken, string RefreshToken)> RefreshTokensAsync(string refreshToken)
+        {
+            try
+            {
+                _log.LogInformation($"Refreshing token");
+                return await _repos.RefreshTokenAsync(refreshToken);
+            }
+            catch (Exception ex)
+            {
+                _log.LogError($"Error refreshing token. Error: {ex.Message}");
+                return (null, null);
+            }
+        }
     }
 }

@@ -35,6 +35,22 @@ namespace Customer_And_Orders.API.Controllers
         }
 
         [Authorize]
+        [HttpPost("refresh-token")]
+        public async Task<IActionResult> RefreshTokens([FromBody] string refreshToken)
+        {
+            var tokens = await _service.RefreshTokensAsync(refreshToken);
+            if(tokens != (null, null))
+            {
+                return Ok($"Token: {tokens.AccessToken}, refreshToken: {tokens.RefreshToken}");
+            }
+            else
+            {
+                return BadRequest();
+            }
+
+        }
+
+        [Authorize]
         [HttpGet("test")]
         public async Task<IActionResult> Test()
         {

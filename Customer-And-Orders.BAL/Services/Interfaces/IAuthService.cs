@@ -6,5 +6,6 @@ namespace Customer_And_Orders.BAL.Services.Interfaces
     {
         Task<bool> RegistrateAsync(CreateUserDTO user);
         Task<(string AccessToken, string RefreshToken)> LoginAsync(LoginUserDTO user);
+        Task<(string AccessToken, string RefreshToken)> RefreshTokensAsync(string refreshToken);
     }
 }

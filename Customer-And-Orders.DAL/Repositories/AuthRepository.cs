@@ -42,7 +42,7 @@ namespace Customer_And_Orders.DAL.Repositories
 
                 await _context.SaveChangesAsync();
                 _log.LogInformation($"User {username} signed in successfuly");
-                return(tokens.AccessToken, tokens.RefreshToken);
+                return (tokens.AccessToken, tokens.RefreshToken);
 
             }
             catch (Exception ex)
@@ -79,6 +79,35 @@ namespace Customer_And_Orders.DAL.Repositories
                 return false;
             }
         }
+
+        public async Task<(string AccessToken, string RefreshToken)> RefreshTokenAsync(string refreshToken)
+        {
+            try
+            {
+                var user = await _context.User.FirstOrDefaultAsync(u => u.RefreshToken == refreshToken);
+
+                _log.LogInformation($"Generating new tokens");
+
+                if (user == null || user.RefreshExpiry <= DateTime.UtcNow)
+                {
+                    _log.LogWarning($"Invalid or expired refresh token");
+                    throw new SecurityTokenException("Invalid or expired refresh token");
+                }
+
+                var tokens = CreateTokens(user);
+                user.RefreshToken = tokens.RefreshToken;
+                user.RefreshExpiry = DateTime.UtcNow.AddDays(7);
+
+                await _context.SaveChangesAsync();
+                return (tokens);
+            }
+            catch (Exception ex)
+            {
+                _log.LogError($"Error refreshing tokens! Error: {ex}");
+                return (null, null);
+            }
+        }
+
 
         public (string AccessToken, string RefreshToken) CreateTokens(User user)
         {

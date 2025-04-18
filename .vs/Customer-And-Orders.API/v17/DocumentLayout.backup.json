@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8220E462-68E4-4509-8184-E6C774F39875}|Customer-And-Orders.DAL\\Customer-And-Orders.DAL.csproj|e:\\andrii\\documents\\asp.net projects\\customer-and-orders.api\\customer-and-orders.dal\\repositories\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8220E462-68E4-4509-8184-E6C774F39875}|Customer-And-Orders.DAL\\Customer-And-Orders.DAL.csproj|solutionrelative:customer-and-orders.dal\\repositories\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48B44692-3B0C-4AFF-B093-FBF090F00851}|Customer-And-Orders.BAL\\Customer-And-Orders.BAL.csproj|e:\\andrii\\documents\\asp.net projects\\customer-and-orders.api\\customer-and-orders.bal\\models\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48B44692-3B0C-4AFF-B093-FBF090F00851}|Customer-And-Orders.BAL\\Customer-And-Orders.BAL.csproj|solutionrelative:customer-and-orders.bal\\models\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6AD61934-B265-4E0E-A9ED-2CF1B223B523}|Customer-And-Orders.API\\Customer-And-Orders.API.csproj|e:\\andrii\\documents\\asp.net projects\\customer-and-orders.api\\customer-and-orders.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6AD61934-B265-4E0E-A9ED-2CF1B223B523}|Customer-And-Orders.API\\Customer-And-Orders.API.csproj|solutionrelative:customer-and-orders.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48B44692-3B0C-4AFF-B093-FBF090F00851}|Customer-And-Orders.BAL\\Customer-And-Orders.BAL.csproj|e:\\andrii\\documents\\asp.net projects\\customer-and-orders.api\\customer-and-orders.bal\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48B44692-3B0C-4AFF-B093-FBF090F00851}|Customer-And-Orders.BAL\\Customer-And-Orders.BAL.csproj|solutionrelative:customer-and-orders.bal\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6AD61934-B265-4E0E-A9ED-2CF1B223B523}|Customer-And-Orders.API\\Customer-And-Orders.API.csproj|e:\\andrii\\documents\\asp.net projects\\customer-and-orders.api\\customer-and-orders.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6AD61934-B265-4E0E-A9ED-2CF1B223B523}|Customer-And-Orders.API\\Customer-And-Orders.API.csproj|solutionrelative:customer-and-orders.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8220E462-68E4-4509-8184-E6C774F39875}|Customer-And-Orders.DAL\\Customer-And-Orders.DAL.csproj|e:\\andrii\\documents\\asp.net projects\\customer-and-orders.api\\customer-and-orders.dal\\data\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8220E462-68E4-4509-8184-E6C774F39875}|Customer-And-Orders.DAL\\Customer-And-Orders.DAL.csproj|solutionrelative:customer-and-orders.dal\\data\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6AD61934-B265-4E0E-A9ED-2CF1B223B523}|Customer-And-Orders.API\\Customer-And-Orders.API.csproj|e:\\andrii\\documents\\asp.net projects\\customer-and-orders.api\\customer-and-orders.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6AD61934-B265-4E0E-A9ED-2CF1B223B523}|Customer-And-Orders.API\\Customer-And-Orders.API.csproj|solutionrelative:customer-and-orders.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8220E462-68E4-4509-8184-E6C774F39875}|Customer-And-Orders.DAL\\Customer-And-Orders.DAL.csproj|e:\\andrii\\documents\\asp.net projects\\customer-and-orders.api\\customer-and-orders.dal\\repositories\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8220E462-68E4-4509-8184-E6C774F39875}|Customer-And-Orders.DAL\\Customer-And-Orders.DAL.csproj|solutionrelative:customer-and-orders.dal\\repositories\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B44692-3B0C-4AFF-B093-FBF090F00851}|Customer-And-Orders.BAL\\Customer-And-Orders.BAL.csproj|e:\\andrii\\documents\\asp.net projects\\customer-and-orders.api\\customer-and-orders.bal\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B44692-3B0C-4AFF-B093-FBF090F00851}|Customer-And-Orders.BAL\\Customer-And-Orders.BAL.csproj|solutionrelative:customer-and-orders.bal\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,90 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 636,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Customer-And-Orders.API\\appsettings.json",
+              "ToolTip": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.API\\appsettings.json",
+              "RelativeToolTip": "Customer-And-Orders.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-18T17:43:43.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.API\\Program.cs",
               "RelativeDocumentMoniker": "Customer-And-Orders.API\\Program.cs",
               "ToolTip": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.API\\Program.cs",
               "RelativeToolTip": "Customer-And-Orders.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAqwEkAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T03:11:15.902Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "AuthController.cs",
               "DocumentMoniker": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Customer-And-Orders.API\\Controllers\\AuthController.cs",
               "ToolTip": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.API\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Customer-And-Orders.API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA1wCkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T03:06:15.461Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "AuthRepository.cs",
               "DocumentMoniker": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.DAL\\Repositories\\AuthRepository.cs",
               "RelativeDocumentMoniker": "Customer-And-Orders.DAL\\Repositories\\AuthRepository.cs",
               "ToolTip": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.DAL\\Repositories\\AuthRepository.cs",
               "RelativeToolTip": "Customer-And-Orders.DAL\\Repositories\\AuthRepository.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAlwDQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T03:03:52.283Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AuthService.cs",
               "DocumentMoniker": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.BAL\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "Customer-And-Orders.BAL\\Services\\AuthService.cs",
               "ToolTip": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.BAL\\Services\\AuthService.cs",
               "RelativeToolTip": "Customer-And-Orders.BAL\\Services\\AuthService.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwCgAAABOAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T02:53:30.21Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 354,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreateUserDTO.cs",
-              "DocumentMoniker": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.BAL\\Models\\CreateUserDTO.cs",
-              "RelativeDocumentMoniker": "Customer-And-Orders.BAL\\Models\\CreateUserDTO.cs",
-              "ToolTip": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.BAL\\Models\\CreateUserDTO.cs",
-              "RelativeToolTip": "Customer-And-Orders.BAL\\Models\\CreateUserDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T02:51:41.796Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "User.cs",
-              "DocumentMoniker": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.DAL\\Data\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "Customer-And-Orders.DAL\\Data\\Entities\\User.cs",
-              "ToolTip": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.DAL\\Data\\Entities\\User.cs",
-              "RelativeToolTip": "Customer-And-Orders.DAL\\Data\\Entities\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T02:23:57.86Z",
               "EditorCaption": ""
             }
           ]

@@ -17,6 +17,22 @@ namespace Customer_And_Orders.BAL.Services
             _log = log;
         }
 
+        public async Task<(string AccessToken, string RefreshToken)> LoginAsync(LoginUserDTO user)
+        {
+            try
+            {
+                _log.LogInformation($"Signing in {user.Username}");
+                var result = await _repos.LoginAsync(user.Username, user.Password);
+                _log.LogInformation($"User {user.Username} signed in!");
+                return result;
+            }
+            catch (Exception ex)
+            {
+                _log.LogError($"Login failed! Error: {ex.Message}");
+                return (null, null);
+            }
+        }
+
         public async Task<bool> RegistrateAsync(CreateUserDTO user)
         {
             try

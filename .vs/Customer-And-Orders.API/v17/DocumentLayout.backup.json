@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{8220E462-68E4-4509-8184-E6C774F39875}|Customer-And-Orders.DAL\\Customer-And-Orders.DAL.csproj|e:\\andrii\\documents\\asp.net projects\\customer-and-orders.api\\customer-and-orders.dal\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8220E462-68E4-4509-8184-E6C774F39875}|Customer-And-Orders.DAL\\Customer-And-Orders.DAL.csproj|solutionrelative:customer-and-orders.dal\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,6 +22,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{8220E462-68E4-4509-8184-E6C774F39875}|Customer-And-Orders.DAL\\Customer-And-Orders.DAL.csproj|e:\\andrii\\documents\\asp.net projects\\customer-and-orders.api\\customer-and-orders.dal\\repositories\\intrefaces\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8220E462-68E4-4509-8184-E6C774F39875}|Customer-And-Orders.DAL\\Customer-And-Orders.DAL.csproj|solutionrelative:customer-and-orders.dal\\repositories\\intrefaces\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{6AD61934-B265-4E0E-A9ED-2CF1B223B523}|Customer-And-Orders.API\\Customer-And-Orders.API.csproj|e:\\andrii\\documents\\asp.net projects\\customer-and-orders.api\\customer-and-orders.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AD61934-B265-4E0E-A9ED-2CF1B223B523}|Customer-And-Orders.API\\Customer-And-Orders.API.csproj|solutionrelative:customer-and-orders.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B44692-3B0C-4AFF-B093-FBF090F00851}|Customer-And-Orders.BAL\\Customer-And-Orders.BAL.csproj|e:\\andrii\\documents\\asp.net projects\\customer-and-orders.api\\customer-and-orders.bal\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B44692-3B0C-4AFF-B093-FBF090F00851}|Customer-And-Orders.BAL\\Customer-And-Orders.BAL.csproj|solutionrelative:customer-and-orders.bal\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8220E462-68E4-4509-8184-E6C774F39875}|Customer-And-Orders.DAL\\Customer-And-Orders.DAL.csproj|e:\\andrii\\documents\\asp.net projects\\customer-and-orders.api\\customer-and-orders.dal\\repositories\\intrefaces\\iauthrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8220E462-68E4-4509-8184-E6C774F39875}|Customer-And-Orders.DAL\\Customer-And-Orders.DAL.csproj|solutionrelative:customer-and-orders.dal\\repositories\\intrefaces\\iauthrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8220E462-68E4-4509-8184-E6C774F39875}|Customer-And-Orders.DAL\\Customer-And-Orders.DAL.csproj|e:\\andrii\\documents\\asp.net projects\\customer-and-orders.api\\customer-and-orders.dal\\repositories\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8220E462-68E4-4509-8184-E6C774F39875}|Customer-And-Orders.DAL\\Customer-And-Orders.DAL.csproj|solutionrelative:customer-and-orders.dal\\repositories\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> d9910ec9303192c2b722628a6d3e8aae647994ee
     },
     {
       "AbsoluteMoniker": "D:0:0:{6AD61934-B265-4E0E-A9ED-2CF1B223B523}|Customer-And-Orders.API\\Customer-And-Orders.API.csproj|e:\\andrii\\documents\\asp.net projects\\customer-and-orders.api\\customer-and-orders.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,12 +50,17 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
+<<<<<<< HEAD
           "DockedWidth": 944,
+=======
+          "DockedWidth": 636,
+>>>>>>> d9910ec9303192c2b722628a6d3e8aae647994ee
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< HEAD
               "Title": "OrderRepository.cs",
               "DocumentMoniker": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.DAL\\Repositories\\OrderRepository.cs",
               "RelativeDocumentMoniker": "Customer-And-Orders.DAL\\Repositories\\OrderRepository.cs",
@@ -47,11 +69,35 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-19T04:47:47.791Z",
+=======
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Customer-And-Orders.API\\Controllers\\AuthController.cs",
+              "ToolTip": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Customer-And-Orders.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAkwCQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T03:06:15.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.BAL\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Customer-And-Orders.BAL\\Services\\AuthService.cs",
+              "ToolTip": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.BAL\\Services\\AuthService.cs",
+              "RelativeToolTip": "Customer-And-Orders.BAL\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T02:53:30.21Z",
+>>>>>>> d9910ec9303192c2b722628a6d3e8aae647994ee
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+<<<<<<< HEAD
               "Title": "OrderService.cs",
               "DocumentMoniker": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.BAL\\Services\\OrderService.cs",
               "RelativeDocumentMoniker": "Customer-And-Orders.BAL\\Services\\OrderService.cs",
@@ -60,10 +106,22 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-19T04:12:26.22Z"
+=======
+              "Title": "IAuthRepository.cs",
+              "DocumentMoniker": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.DAL\\Repositories\\Intrefaces\\IAuthRepository.cs",
+              "RelativeDocumentMoniker": "Customer-And-Orders.DAL\\Repositories\\Intrefaces\\IAuthRepository.cs",
+              "ToolTip": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.DAL\\Repositories\\Intrefaces\\IAuthRepository.cs",
+              "RelativeToolTip": "Customer-And-Orders.DAL\\Repositories\\Intrefaces\\IAuthRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T23:29:17.86Z",
+              "EditorCaption": ""
+>>>>>>> d9910ec9303192c2b722628a6d3e8aae647994ee
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+<<<<<<< HEAD
               "Title": "IOrderRepository.cs",
               "DocumentMoniker": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.DAL\\Repositories\\Intrefaces\\IOrderRepository.cs",
               "RelativeDocumentMoniker": "Customer-And-Orders.DAL\\Repositories\\Intrefaces\\IOrderRepository.cs",
@@ -100,14 +158,36 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
+=======
+>>>>>>> d9910ec9303192c2b722628a6d3e8aae647994ee
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.API\\Program.cs",
               "RelativeDocumentMoniker": "Customer-And-Orders.API\\Program.cs",
               "ToolTip": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.API\\Program.cs",
               "RelativeToolTip": "Customer-And-Orders.API\\Program.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAABIAAAAAAAAAAAAqwDwAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T03:11:15.902Z"
+=======
+              "ViewState": "AgIAADAAAAAAAAAAAAAqwE8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T03:11:15.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthRepository.cs",
+              "DocumentMoniker": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.DAL\\Repositories\\AuthRepository.cs",
+              "RelativeDocumentMoniker": "Customer-And-Orders.DAL\\Repositories\\AuthRepository.cs",
+              "ToolTip": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.DAL\\Repositories\\AuthRepository.cs",
+              "RelativeToolTip": "Customer-And-Orders.DAL\\Repositories\\AuthRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T03:03:52.283Z",
+              "EditorCaption": ""
+>>>>>>> d9910ec9303192c2b722628a6d3e8aae647994ee
             }
           ]
         }

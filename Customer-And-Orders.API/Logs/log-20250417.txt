@@ -1,0 +1,226 @@
+2025-04-17 19:46:43.416 -07:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-04-17 19:46:43.437 -07:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-04-17 19:46:43.443 -07:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-04-17 19:46:43.471 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-04-17 19:46:43.475 -07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-04-17 19:46:43.475 -07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-04-17 19:46:43.477 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-04-17 19:46:43.481 -07:00 [INF] Applying migration '20250418024640_Initial-Create'.
+2025-04-17 19:46:43.487 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Order] (
+    [Id] int NOT NULL IDENTITY,
+    [Title] nvarchar(max) NOT NULL,
+    [Description] nvarchar(max) NOT NULL,
+    [Status] nvarchar(max) NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    [UserId] int NOT NULL,
+    CONSTRAINT [PK_Order] PRIMARY KEY ([Id])
+);
+2025-04-17 19:46:43.487 -07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [User] (
+    [Id] int NOT NULL IDENTITY,
+    [Username] nvarchar(max) NOT NULL,
+    [PasswordHash] nvarchar(max) NOT NULL,
+    [Email] nvarchar(max) NULL,
+    [Role] nvarchar(max) NOT NULL,
+    [RefreshToken] nvarchar(max) NULL,
+    [RefreshExpiry] datetime2 NULL,
+    CONSTRAINT [PK_User] PRIMARY KEY ([Id])
+);
+2025-04-17 19:46:43.488 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250418024640_Initial-Create', N'9.0.4');
+2025-04-17 19:46:43.489 -07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2025-04-17 20:09:09.062 -07:00 [INF] Now listening on: https://localhost:7200
+2025-04-17 20:09:09.079 -07:00 [INF] Now listening on: http://localhost:5258
+2025-04-17 20:09:09.114 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-17 20:09:09.114 -07:00 [INF] Hosting environment: Development
+2025-04-17 20:09:09.115 -07:00 [INF] Content root path: E:\Andrii\Documents\ASP.Net Projects\Customer-And-Orders.API\Customer-And-Orders.API
+2025-04-17 20:09:10.252 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger - null null
+2025-04-17 20:09:10.330 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger - 301 0 null 82.8644ms
+2025-04-17 20:09:10.332 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/index.html - null null
+2025-04-17 20:09:10.368 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/index.html - 200 null text/html;charset=utf-8 35.4679ms
+2025-04-17 20:09:10.371 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/swagger-ui-bundle.js - null null
+2025-04-17 20:09:10.371 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/swagger-ui.css - null null
+2025-04-17 20:09:10.371 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/swagger-ui-standalone-preset.js - null null
+2025-04-17 20:09:10.371 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-17 20:09:10.387 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 16.2742ms
+2025-04-17 20:09:10.392 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_vs/browserLink - null null
+2025-04-17 20:09:10.392 -07:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-17 20:09:10.392 -07:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-17 20:09:10.398 -07:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-17 20:09:10.398 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 27.0381ms
+2025-04-17 20:09:10.398 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/swagger-ui.css - 200 152034 text/css 27.6577ms
+2025-04-17 20:09:10.400 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 28.9883ms
+2025-04-17 20:09:10.648 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_vs/browserLink - 200 null text/javascript; charset=UTF-8 256.2393ms
+2025-04-17 20:09:10.676 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - null null
+2025-04-17 20:09:10.681 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.3725ms
+2025-04-17 20:09:10.698 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/favicon-32x32.png - null null
+2025-04-17 20:09:10.700 -07:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-04-17 20:09:10.701 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/favicon-32x32.png - 200 628 image/png 2.8119ms
+2025-04-17 20:09:15.694 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/favicon-32x32.png - null null
+2025-04-17 20:09:15.696 -07:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-04-17 20:09:15.696 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/favicon-32x32.png - 200 628 image/png 2.9226ms
+2025-04-17 20:09:32.257 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/index.html - null null
+2025-04-17 20:09:32.261 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/index.html - 200 null text/html;charset=utf-8 4.6296ms
+2025-04-17 20:09:32.268 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_vs/browserLink - null null
+2025-04-17 20:09:32.268 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-17 20:09:32.274 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 5.9588ms
+2025-04-17 20:09:32.282 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.114ms
+2025-04-17 20:09:32.313 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - null null
+2025-04-17 20:09:32.324 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - Customer_And_Orders.API.Controllers.AuthController.Register (Customer-And-Orders.API). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-04-17 20:09:32.338 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 25.6958ms
+2025-04-17 20:10:04.790 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/index.html - null null
+2025-04-17 20:10:04.793 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/index.html - 200 null text/html;charset=utf-8 3.2314ms
+2025-04-17 20:10:04.799 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-17 20:10:04.799 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_vs/browserLink - null null
+2025-04-17 20:10:04.802 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 2.2678ms
+2025-04-17 20:10:04.810 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.9737ms
+2025-04-17 20:10:04.837 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - null null
+2025-04-17 20:10:04.840 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - Customer_And_Orders.API.Controllers.AuthController.Register (Customer-And-Orders.API). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-04-17 20:10:04.848 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 10.7483ms
+2025-04-17 20:10:07.337 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/index.html - null null
+2025-04-17 20:10:07.340 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/index.html - 200 null text/html;charset=utf-8 3.3789ms
+2025-04-17 20:10:07.346 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-17 20:10:07.346 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_vs/browserLink - null null
+2025-04-17 20:10:07.348 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 1.9824ms
+2025-04-17 20:10:07.353 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.8543ms
+2025-04-17 20:10:07.376 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - null null
+2025-04-17 20:10:07.378 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - Customer_And_Orders.API.Controllers.AuthController.Register (Customer-And-Orders.API). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-04-17 20:10:07.382 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 5.9592ms
+2025-04-17 20:10:19.174 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/index.html - null null
+2025-04-17 20:10:19.177 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/index.html - 200 null text/html;charset=utf-8 3.1955ms
+2025-04-17 20:10:19.183 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-17 20:10:19.183 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_vs/browserLink - null null
+2025-04-17 20:10:19.185 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 1.8891ms
+2025-04-17 20:10:19.190 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.6434ms
+2025-04-17 20:10:19.215 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - null null
+2025-04-17 20:10:19.246 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 31.1078ms
+2025-04-17 20:10:34.656 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7200/api/Auth - application/json 94
+2025-04-17 20:10:34.660 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.AuthController.Register (Customer-And-Orders.API)'
+2025-04-17 20:10:34.674 -07:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Customer_And_Orders.BAL.Models.CreateUserDTO) on controller Customer_And_Orders.API.Controllers.AuthController (Customer-And-Orders.API).
+2025-04-17 20:10:34.678 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.AuthController.Register (Customer-And-Orders.API) in 1.1655ms
+2025-04-17 20:10:34.679 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.AuthController.Register (Customer-And-Orders.API)'
+2025-04-17 20:10:34.680 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Customer_And_Orders.BAL.Services.Interfaces.IAuthService' while attempting to activate 'Customer_And_Orders.API.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-04-17 20:10:34.686 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7200/api/Auth - 500 null text/plain; charset=utf-8 29.8294ms
+2025-04-17 20:11:46.225 -07:00 [INF] Now listening on: https://localhost:7200
+2025-04-17 20:11:46.244 -07:00 [INF] Now listening on: http://localhost:5258
+2025-04-17 20:11:46.295 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-17 20:11:46.296 -07:00 [INF] Hosting environment: Development
+2025-04-17 20:11:46.296 -07:00 [INF] Content root path: E:\Andrii\Documents\ASP.Net Projects\Customer-And-Orders.API\Customer-And-Orders.API
+2025-04-17 20:11:46.668 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/index.html - null null
+2025-04-17 20:11:46.760 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/index.html - 200 null text/html;charset=utf-8 97.2322ms
+2025-04-17 20:11:46.764 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-17 20:11:46.768 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 4.2916ms
+2025-04-17 20:11:46.783 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_vs/browserLink - null null
+2025-04-17 20:11:46.805 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.2733ms
+2025-04-17 20:11:46.831 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - null null
+2025-04-17 20:11:46.839 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.82ms
+2025-04-17 20:11:49.095 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7200/api/Auth - application/json 94
+2025-04-17 20:11:49.100 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.AuthController.Register (Customer-And-Orders.API)'
+2025-04-17 20:11:49.114 -07:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Customer_And_Orders.BAL.Models.CreateUserDTO) on controller Customer_And_Orders.API.Controllers.AuthController (Customer-And-Orders.API).
+2025-04-17 20:11:49.197 -07:00 [INF] Trying to sign up user: chema
+2025-04-17 20:11:49.321 -07:00 [INF] Addint chema to database
+2025-04-17 20:11:49.626 -07:00 [ERR] Error adding chema to database. Error: Queries performing 'LastOrDefault' operation must have a deterministic sort order. Rewrite the query to apply an 'OrderBy' operation on the sequence before calling 'LastOrDefault'.
+2025-04-17 20:11:49.626 -07:00 [WRN] Cannot create user with username chema
+2025-04-17 20:11:49.630 -07:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-04-17 20:11:49.640 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.AuthController.Register (Customer-And-Orders.API) in 523.5088ms
+2025-04-17 20:11:49.641 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.AuthController.Register (Customer-And-Orders.API)'
+2025-04-17 20:11:49.644 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7200/api/Auth - 400 null application/problem+json; charset=utf-8 549.1221ms
+2025-04-17 20:13:36.298 -07:00 [INF] Now listening on: https://localhost:7200
+2025-04-17 20:13:36.320 -07:00 [INF] Now listening on: http://localhost:5258
+2025-04-17 20:13:36.411 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-17 20:13:36.412 -07:00 [INF] Hosting environment: Development
+2025-04-17 20:13:36.412 -07:00 [INF] Content root path: E:\Andrii\Documents\ASP.Net Projects\Customer-And-Orders.API\Customer-And-Orders.API
+2025-04-17 20:13:36.789 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/index.html - null null
+2025-04-17 20:13:36.880 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/index.html - 200 null text/html;charset=utf-8 94.8465ms
+2025-04-17 20:13:36.884 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-17 20:13:36.888 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 3.9831ms
+2025-04-17 20:13:36.903 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_vs/browserLink - null null
+2025-04-17 20:13:36.925 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.7446ms
+2025-04-17 20:13:36.952 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - null null
+2025-04-17 20:13:36.959 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.3733ms
+2025-04-17 20:13:39.229 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7200/api/Auth - application/json 94
+2025-04-17 20:13:39.233 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.AuthController.Register (Customer-And-Orders.API)'
+2025-04-17 20:13:39.248 -07:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Customer_And_Orders.BAL.Models.CreateUserDTO) on controller Customer_And_Orders.API.Controllers.AuthController (Customer-And-Orders.API).
+2025-04-17 20:13:39.332 -07:00 [INF] Trying to sign up user: chema
+2025-04-17 20:13:39.458 -07:00 [INF] Addint chema to database
+2025-04-17 20:13:39.897 -07:00 [INF] Executed DbCommand (19ms) [Parameters=[@__user_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]
+        WHERE [u].[Username] = @__user_Username_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-04-17 20:13:39.979 -07:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [User] ([Email], [PasswordHash], [RefreshExpiry], [RefreshToken], [Role], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-04-17 20:13:39.992 -07:00 [INF] User chema signed up successfuly
+2025-04-17 20:13:39.997 -07:00 [INF] Executing OkObjectResult, writing value of type 'Customer_And_Orders.BAL.Models.CreateUserDTO'.
+2025-04-17 20:13:40.000 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.AuthController.Register (Customer-And-Orders.API) in 749.4184ms
+2025-04-17 20:13:40.001 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.AuthController.Register (Customer-And-Orders.API)'
+2025-04-17 20:13:40.005 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7200/api/Auth - 200 null application/json; charset=utf-8 775.9035ms

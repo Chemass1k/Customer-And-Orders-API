@@ -1,5 +1,6 @@
 .vs/
 # ASP.NET
+.vs/
 bin/
 obj/
 *.user

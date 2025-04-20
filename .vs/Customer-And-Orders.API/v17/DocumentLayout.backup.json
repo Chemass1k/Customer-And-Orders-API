@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{6AD61934-B265-4E0E-A9ED-2CF1B223B523}|Customer-And-Orders.API\\Customer-And-Orders.API.csproj|e:\\andrii\\documents\\asp.net projects\\customer-and-orders.api\\customer-and-orders.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6AD61934-B265-4E0E-A9ED-2CF1B223B523}|Customer-And-Orders.API\\Customer-And-Orders.API.csproj|solutionrelative:customer-and-orders.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,8 +20,26 @@
       "RelativeMoniker": "D:0:0:{8220E462-68E4-4509-8184-E6C774F39875}|Customer-And-Orders.DAL\\Customer-And-Orders.DAL.csproj|solutionrelative:customer-and-orders.dal\\repositories\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+=======
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{6AD61934-B265-4E0E-A9ED-2CF1B223B523}|Customer-And-Orders.API\\Customer-And-Orders.API.csproj|e:\\andrii\\documents\\asp.net projects\\customer-and-orders.api\\customer-and-orders.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6AD61934-B265-4E0E-A9ED-2CF1B223B523}|Customer-And-Orders.API\\Customer-And-Orders.API.csproj|solutionrelative:customer-and-orders.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8220E462-68E4-4509-8184-E6C774F39875}|Customer-And-Orders.DAL\\Customer-And-Orders.DAL.csproj|e:\\andrii\\documents\\asp.net projects\\customer-and-orders.api\\customer-and-orders.dal\\repositories\\intrefaces\\iadminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8220E462-68E4-4509-8184-E6C774F39875}|Customer-And-Orders.DAL\\Customer-And-Orders.DAL.csproj|solutionrelative:customer-and-orders.dal\\repositories\\intrefaces\\iadminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AD61934-B265-4E0E-A9ED-2CF1B223B523}|Customer-And-Orders.API\\Customer-And-Orders.API.csproj|e:\\andrii\\documents\\asp.net projects\\customer-and-orders.api\\customer-and-orders.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AD61934-B265-4E0E-A9ED-2CF1B223B523}|Customer-And-Orders.API\\Customer-And-Orders.API.csproj|solutionrelative:customer-and-orders.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B44692-3B0C-4AFF-B093-FBF090F00851}|Customer-And-Orders.BAL\\Customer-And-Orders.BAL.csproj|e:\\andrii\\documents\\asp.net projects\\customer-and-orders.api\\customer-and-orders.bal\\services\\interfaces\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B44692-3B0C-4AFF-B093-FBF090F00851}|Customer-And-Orders.BAL\\Customer-And-Orders.BAL.csproj|solutionrelative:customer-and-orders.bal\\services\\interfaces\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B44692-3B0C-4AFF-B093-FBF090F00851}|Customer-And-Orders.BAL\\Customer-And-Orders.BAL.csproj|e:\\andrii\\documents\\asp.net projects\\customer-and-orders.api\\customer-and-orders.bal\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B44692-3B0C-4AFF-B093-FBF090F00851}|Customer-And-Orders.BAL\\Customer-And-Orders.BAL.csproj|solutionrelative:customer-and-orders.bal\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,12 +48,49 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
+<<<<<<< Updated upstream
           "DockedWidth": 636,
+=======
+          "DockedWidth": 944,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.API\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Customer-And-Orders.API\\Controllers\\AdminController.cs",
+              "ToolTip": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.API\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Customer-And-Orders.API\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T01:52:21.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminService.cs",
+              "DocumentMoniker": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.BAL\\Services\\AdminService.cs",
+              "RelativeDocumentMoniker": "Customer-And-Orders.BAL\\Services\\AdminService.cs",
+              "ToolTip": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.BAL\\Services\\AdminService.cs",
+              "RelativeToolTip": "Customer-And-Orders.BAL\\Services\\AdminService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T01:44:46.028Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 944,
+>>>>>>> Stashed changes
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< Updated upstream
               "Title": "AuthController.cs",
               "DocumentMoniker": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Customer-And-Orders.API\\Controllers\\AuthController.cs",
@@ -74,27 +130,48 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
+=======
+>>>>>>> Stashed changes
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.API\\Program.cs",
               "RelativeDocumentMoniker": "Customer-And-Orders.API\\Program.cs",
               "ToolTip": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.API\\Program.cs",
               "RelativeToolTip": "Customer-And-Orders.API\\Program.cs",
+<<<<<<< Updated upstream
               "ViewState": "AgIAADAAAAAAAAAAAAAqwE8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T03:11:15.902Z",
+=======
+              "ViewState": "AgIAAB8AAAAAAAAAAAAawD4AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T01:55:14.221Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AuthRepository.cs",
-              "DocumentMoniker": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.DAL\\Repositories\\AuthRepository.cs",
-              "RelativeDocumentMoniker": "Customer-And-Orders.DAL\\Repositories\\AuthRepository.cs",
-              "ToolTip": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.DAL\\Repositories\\AuthRepository.cs",
-              "RelativeToolTip": "Customer-And-Orders.DAL\\Repositories\\AuthRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
+              "Title": "IAdminService.cs",
+              "DocumentMoniker": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.BAL\\Services\\Interfaces\\IAdminService.cs",
+              "RelativeDocumentMoniker": "Customer-And-Orders.BAL\\Services\\Interfaces\\IAdminService.cs",
+              "ToolTip": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.BAL\\Services\\Interfaces\\IAdminService.cs",
+              "RelativeToolTip": "Customer-And-Orders.BAL\\Services\\Interfaces\\IAdminService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T03:03:52.283Z",
+              "WhenOpened": "2025-04-20T01:44:39.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IAdminRepository.cs",
+              "DocumentMoniker": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.DAL\\Repositories\\Intrefaces\\IAdminRepository.cs",
+              "RelativeDocumentMoniker": "Customer-And-Orders.DAL\\Repositories\\Intrefaces\\IAdminRepository.cs",
+              "ToolTip": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.DAL\\Repositories\\Intrefaces\\IAdminRepository.cs",
+              "RelativeToolTip": "Customer-And-Orders.DAL\\Repositories\\Intrefaces\\IAdminRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T01:32:12.267Z",
               "EditorCaption": ""
             }
           ]

@@ -55,8 +55,17 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 
 builder.Services.AddScoped<IAuthRepository, AuthRepository>();
+<<<<<<< Updated upstream
 
 builder.Services.AddScoped<IAuthService, AuthService>();
+=======
+builder.Services.AddScoped<IOrderRepository,  OrderRepository>();
+builder.Services.AddScoped<IAdminRepository, AdminRepository>();
+
+builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<IAdminService, AdminService>();
+>>>>>>> Stashed changes
 
 builder.Services.AddAuthentication("Bearer")
     .AddJwtBearer("Bearer", options =>

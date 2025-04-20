@@ -1,0 +1,1319 @@
+2025-04-19 09:43:07.859 -07:00 [INF] User profile is available. Using 'C:\Users\Andrii\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-19 09:43:08.055 -07:00 [INF] Now listening on: https://localhost:7200
+2025-04-19 09:43:08.055 -07:00 [INF] Now listening on: http://localhost:5258
+2025-04-19 09:43:08.106 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-19 09:43:08.107 -07:00 [INF] Hosting environment: Development
+2025-04-19 09:43:08.108 -07:00 [INF] Content root path: E:\Andrii\Documents\ASP.Net Projects\Customer-And-Orders.API\Customer-And-Orders.API
+2025-04-19 09:43:08.690 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger - null null
+2025-04-19 09:43:08.767 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger - 301 0 null 81.4157ms
+2025-04-19 09:43:08.770 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/index.html - null null
+2025-04-19 09:43:08.804 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/index.html - 200 null text/html;charset=utf-8 34.2442ms
+2025-04-19 09:43:08.808 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/swagger-ui.css - null null
+2025-04-19 09:43:08.808 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/swagger-ui-standalone-preset.js - null null
+2025-04-19 09:43:08.808 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/swagger-ui-bundle.js - null null
+2025-04-19 09:43:08.808 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-19 09:43:08.825 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 17.3384ms
+2025-04-19 09:43:08.830 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_vs/browserLink - null null
+2025-04-19 09:43:08.830 -07:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-19 09:43:08.830 -07:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-19 09:43:08.836 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 28.0583ms
+2025-04-19 09:43:08.838 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/favicon-32x32.png - null null
+2025-04-19 09:43:08.836 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/swagger-ui.css - 200 152034 text/css 28.1823ms
+2025-04-19 09:43:08.843 -07:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-19 09:43:08.842 -07:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-04-19 09:43:08.845 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 37.7629ms
+2025-04-19 09:43:08.846 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/favicon-32x32.png - 200 628 image/png 8.5468ms
+2025-04-19 09:43:08.907 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_vs/browserLink - 200 null text/javascript; charset=UTF-8 77.5831ms
+2025-04-19 09:43:08.938 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - null null
+2025-04-19 09:43:08.949 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.4657ms
+2025-04-19 09:43:23.753 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7200/api/Auth/sign-in - application/json 53
+2025-04-19 09:43:23.793 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.AuthController.Login (Customer-And-Orders.API)'
+2025-04-19 09:43:23.808 -07:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Customer_And_Orders.BAL.Models.LoginUserDTO) on controller Customer_And_Orders.API.Controllers.AuthController (Customer-And-Orders.API).
+2025-04-19 09:43:23.944 -07:00 [INF] Signing in chema
+2025-04-19 09:43:23.948 -07:00 [INF] Trying to sign in chema
+2025-04-19 09:43:24.522 -07:00 [INF] Executed DbCommand (22ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[RefreshExpiry], [u].[RefreshToken], [u].[Role], [u].[Username]
+FROM [User] AS [u]
+WHERE [u].[Username] = @__username_0
+2025-04-19 09:43:24.737 -07:00 [INF] Executed DbCommand (5ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [User] SET [RefreshExpiry] = @p0, [RefreshToken] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2025-04-19 09:43:24.744 -07:00 [INF] User chema signed in successfuly
+2025-04-19 09:43:24.745 -07:00 [INF] User chema signed in!
+2025-04-19 09:43:24.748 -07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-19 09:43:24.754 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.AuthController.Login (Customer-And-Orders.API) in 943.1938ms
+2025-04-19 09:43:24.755 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.AuthController.Login (Customer-And-Orders.API)'
+2025-04-19 09:43:24.759 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7200/api/Auth/sign-in - 200 null application/json; charset=utf-8 1005.6281ms
+2025-04-19 09:43:38.617 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?Data=true - null null
+2025-04-19 09:43:38.641 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:43:38.646 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 09:43:38.653 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 09:43:38.655 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 09:43:38.673 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[Id]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 09:43:38.681 -07:00 [INF] Recived all orders for user 1
+2025-04-19 09:43:38.681 -07:00 [INF] Orders recieved!
+2025-04-19 09:43:38.682 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 09:43:38.686 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 39.4291ms
+2025-04-19 09:43:38.687 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:43:38.688 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?Data=true - 200 null application/json; charset=utf-8 70.8392ms
+2025-04-19 09:43:43.488 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?Data=false - null null
+2025-04-19 09:43:43.495 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:43:43.496 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 09:43:43.499 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 09:43:43.499 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 09:43:43.529 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[Id]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 09:43:43.531 -07:00 [INF] Recived all orders for user 1
+2025-04-19 09:43:43.531 -07:00 [INF] Orders recieved!
+2025-04-19 09:43:43.532 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 09:43:43.533 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 35.42ms
+2025-04-19 09:43:43.534 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:43:43.535 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?Data=false - 200 null application/json; charset=utf-8 46.6778ms
+2025-04-19 09:44:16.295 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?Page=1&PageSize=1&Status=Ready - null null
+2025-04-19 09:44:16.297 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:44:16.298 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 09:44:16.301 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 09:44:16.301 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 09:44:16.309 -07:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__queryParams_Status_1='?' (Size = 4000), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0 AND [o].[Status] = @__queryParams_Status_1
+ORDER BY [o].[Id]
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2025-04-19 09:44:16.311 -07:00 [INF] Recived all orders for user 1
+2025-04-19 09:44:16.311 -07:00 [INF] Orders recieved!
+2025-04-19 09:44:16.311 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 09:44:16.312 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 13.268ms
+2025-04-19 09:44:16.313 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:44:16.314 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?Page=1&PageSize=1&Status=Ready - 200 null application/json; charset=utf-8 19.5728ms
+2025-04-19 09:44:20.136 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?Page=1&PageSize=1&Status=Updated - null null
+2025-04-19 09:44:20.139 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:44:20.139 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 09:44:20.141 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 09:44:20.142 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 09:44:20.144 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__queryParams_Status_1='?' (Size = 4000), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0 AND [o].[Status] = @__queryParams_Status_1
+ORDER BY [o].[Id]
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2025-04-19 09:44:20.146 -07:00 [INF] Recived all orders for user 1
+2025-04-19 09:44:20.146 -07:00 [INF] Orders recieved!
+2025-04-19 09:44:20.147 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 09:44:20.148 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 7.5246ms
+2025-04-19 09:44:20.149 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:44:20.150 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?Page=1&PageSize=1&Status=Updated - 200 null application/json; charset=utf-8 14.2427ms
+2025-04-19 09:44:24.438 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?Page=1&PageSize=2&Status=Updated - null null
+2025-04-19 09:44:24.440 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:44:24.441 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 09:44:24.443 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 09:44:24.444 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 09:44:24.446 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__queryParams_Status_1='?' (Size = 4000), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0 AND [o].[Status] = @__queryParams_Status_1
+ORDER BY [o].[Id]
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2025-04-19 09:44:24.449 -07:00 [INF] Recived all orders for user 1
+2025-04-19 09:44:24.450 -07:00 [INF] Orders recieved!
+2025-04-19 09:44:24.450 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 09:44:24.451 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 8.2036ms
+2025-04-19 09:44:24.452 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:44:24.453 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?Page=1&PageSize=2&Status=Updated - 200 null application/json; charset=utf-8 14.4183ms
+2025-04-19 09:44:32.617 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-by-id?id=4 - null null
+2025-04-19 09:44:32.619 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetOrderByIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:44:32.621 -07:00 [INF] Route matched with {action = "GetOrderById", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrderByIdAsync(Int32) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 09:44:32.624 -07:00 [INF] Trying to get order with id 4
+2025-04-19 09:44:32.625 -07:00 [INF] Looking for order with id 4 in database
+2025-04-19 09:44:32.629 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[Id] = @__id_0
+2025-04-19 09:44:32.631 -07:00 [INF] Recieved order with Id: 4
+2025-04-19 09:44:32.631 -07:00 [INF] 
+2025-04-19 09:44:32.632 -07:00 [INF] Executing OkObjectResult, writing value of type 'Customer_And_Orders.DAL.Data.Entities.Order'.
+2025-04-19 09:44:32.632 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetOrderByIdAsync (Customer-And-Orders.API) in 9.8406ms
+2025-04-19 09:44:32.633 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetOrderByIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:44:32.634 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-by-id?id=4 - 200 null application/json; charset=utf-8 17.3975ms
+2025-04-19 09:45:42.847 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?Page=1&PageSize=2&Search=FirstOrder - null null
+2025-04-19 09:45:42.850 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:45:42.851 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 09:45:42.853 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 09:45:42.853 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 09:45:42.857 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[Id]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 09:45:42.859 -07:00 [INF] Recived all orders for user 1
+2025-04-19 09:45:42.860 -07:00 [INF] Orders recieved!
+2025-04-19 09:45:42.860 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 09:45:42.861 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 8.3613ms
+2025-04-19 09:45:42.862 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:45:42.863 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?Page=1&PageSize=2&Search=FirstOrder - 200 null application/json; charset=utf-8 18.7198ms
+2025-04-19 09:47:09.491 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/index.html - null null
+2025-04-19 09:47:09.500 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/index.html - 200 null text/html;charset=utf-8 8.9861ms
+2025-04-19 09:47:09.507 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-19 09:47:09.507 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_vs/browserLink - null null
+2025-04-19 09:47:09.509 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 2.3096ms
+2025-04-19 09:47:09.518 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_vs/browserLink - 200 null text/javascript; charset=UTF-8 11.1399ms
+2025-04-19 09:47:09.605 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - null null
+2025-04-19 09:47:09.608 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/favicon-32x32.png - null null
+2025-04-19 09:47:09.610 -07:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-04-19 09:47:09.612 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/favicon-32x32.png - 200 628 image/png 3.7847ms
+2025-04-19 09:47:09.612 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.1845ms
+2025-04-19 09:47:18.880 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?Data=false - null null
+2025-04-19 09:47:18.883 -07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-04-19 09:47:18.885 -07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-04-19 09:47:18.886 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?Data=false - 401 0 null 5.9787ms
+2025-04-19 09:47:35.447 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7200/api/Auth/sign-in - application/json 53
+2025-04-19 09:47:35.449 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.AuthController.Login (Customer-And-Orders.API)'
+2025-04-19 09:47:35.452 -07:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Customer_And_Orders.BAL.Models.LoginUserDTO) on controller Customer_And_Orders.API.Controllers.AuthController (Customer-And-Orders.API).
+2025-04-19 09:47:35.454 -07:00 [INF] Signing in chema
+2025-04-19 09:47:35.454 -07:00 [INF] Trying to sign in chema
+2025-04-19 09:47:35.456 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[RefreshExpiry], [u].[RefreshToken], [u].[Role], [u].[Username]
+FROM [User] AS [u]
+WHERE [u].[Username] = @__username_0
+2025-04-19 09:47:35.583 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [User] SET [RefreshExpiry] = @p0, [RefreshToken] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2025-04-19 09:47:35.585 -07:00 [INF] User chema signed in successfuly
+2025-04-19 09:47:35.585 -07:00 [INF] User chema signed in!
+2025-04-19 09:47:35.586 -07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-19 09:47:35.587 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.AuthController.Login (Customer-And-Orders.API) in 134.4168ms
+2025-04-19 09:47:35.588 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.AuthController.Login (Customer-And-Orders.API)'
+2025-04-19 09:47:35.589 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7200/api/Auth/sign-in - 200 null application/json; charset=utf-8 141.9995ms
+2025-04-19 09:47:45.933 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?Data=false - null null
+2025-04-19 09:47:45.936 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:47:45.939 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 09:47:45.941 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 09:47:45.942 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 09:47:45.946 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[Id]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 09:47:45.948 -07:00 [INF] Recived all orders for user 1
+2025-04-19 09:47:45.948 -07:00 [INF] Orders recieved!
+2025-04-19 09:47:45.949 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 09:47:45.950 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 9.7942ms
+2025-04-19 09:47:45.951 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:47:45.952 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?Data=false - 200 null application/json; charset=utf-8 19.1298ms
+2025-04-19 09:47:53.472 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?Data=true - null null
+2025-04-19 09:47:53.474 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:47:53.475 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 09:47:53.477 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 09:47:53.478 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 09:47:53.480 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[Id]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 09:47:53.482 -07:00 [INF] Recived all orders for user 1
+2025-04-19 09:47:53.482 -07:00 [INF] Orders recieved!
+2025-04-19 09:47:53.483 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 09:47:53.483 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 6.7181ms
+2025-04-19 09:47:53.484 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:47:53.485 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?Data=true - 200 null application/json; charset=utf-8 12.8706ms
+2025-04-19 09:48:10.755 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?Data=false - null null
+2025-04-19 09:48:10.757 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:48:10.758 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 09:48:10.759 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 09:48:10.760 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 09:48:10.761 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[Id]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 09:48:10.763 -07:00 [INF] Recived all orders for user 1
+2025-04-19 09:48:10.764 -07:00 [INF] Orders recieved!
+2025-04-19 09:48:10.764 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 09:48:10.765 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 6.0787ms
+2025-04-19 09:48:10.766 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:48:10.767 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?Data=false - 200 null application/json; charset=utf-8 11.9023ms
+2025-04-19 09:48:15.152 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?Data=false - null null
+2025-04-19 09:48:15.154 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:48:15.154 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 09:48:15.156 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 09:48:15.156 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 09:48:15.158 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[Id]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 09:48:15.160 -07:00 [INF] Recived all orders for user 1
+2025-04-19 09:48:15.160 -07:00 [INF] Orders recieved!
+2025-04-19 09:48:15.161 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 09:48:15.162 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 5.7892ms
+2025-04-19 09:48:15.162 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:48:15.163 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?Data=false - 200 null application/json; charset=utf-8 11.4269ms
+2025-04-19 09:49:35.328 -07:00 [INF] User profile is available. Using 'C:\Users\Andrii\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-19 09:49:35.446 -07:00 [INF] Now listening on: https://localhost:7200
+2025-04-19 09:49:35.447 -07:00 [INF] Now listening on: http://localhost:5258
+2025-04-19 09:49:35.506 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-19 09:49:35.511 -07:00 [INF] Hosting environment: Development
+2025-04-19 09:49:35.512 -07:00 [INF] Content root path: E:\Andrii\Documents\ASP.Net Projects\Customer-And-Orders.API\Customer-And-Orders.API
+2025-04-19 09:49:35.995 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/index.html - null null
+2025-04-19 09:49:36.087 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/index.html - 200 null text/html;charset=utf-8 95.8534ms
+2025-04-19 09:49:36.091 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-19 09:49:36.095 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 4.7239ms
+2025-04-19 09:49:36.113 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_vs/browserLink - null null
+2025-04-19 09:49:36.135 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.13ms
+2025-04-19 09:49:36.162 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - null null
+2025-04-19 09:49:36.174 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.5659ms
+2025-04-19 09:49:53.593 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?Data=desc - null null
+2025-04-19 09:49:53.652 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:49:53.666 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 09:49:53.739 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 09:49:53.743 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 09:49:54.199 -07:00 [INF] Executed DbCommand (20ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[Id]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 09:49:54.233 -07:00 [INF] Recived all orders for user 1
+2025-04-19 09:49:54.233 -07:00 [INF] Orders recieved!
+2025-04-19 09:49:54.238 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 09:49:54.246 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 577.6008ms
+2025-04-19 09:49:54.247 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:49:54.250 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?Data=desc - 200 null application/json; charset=utf-8 657.6434ms
+2025-04-19 09:49:59.317 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all - null null
+2025-04-19 09:49:59.321 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:49:59.322 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 09:49:59.325 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 09:49:59.326 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 09:49:59.340 -07:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[Id]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 09:49:59.342 -07:00 [INF] Recived all orders for user 1
+2025-04-19 09:49:59.342 -07:00 [INF] Orders recieved!
+2025-04-19 09:49:59.343 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 09:49:59.344 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 20.6955ms
+2025-04-19 09:49:59.345 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:49:59.346 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all - 200 null application/json; charset=utf-8 29.6313ms
+2025-04-19 09:50:00.837 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all - null null
+2025-04-19 09:50:00.840 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:50:00.841 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 09:50:00.845 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 09:50:00.845 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 09:50:00.875 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[Id]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 09:50:00.877 -07:00 [INF] Recived all orders for user 1
+2025-04-19 09:50:00.878 -07:00 [INF] Orders recieved!
+2025-04-19 09:50:00.878 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 09:50:00.879 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 36.7605ms
+2025-04-19 09:50:00.880 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:50:00.881 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all - 200 null application/json; charset=utf-8 44.6243ms
+2025-04-19 09:53:17.772 -07:00 [INF] User profile is available. Using 'C:\Users\Andrii\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-19 09:53:17.884 -07:00 [INF] Now listening on: https://localhost:7200
+2025-04-19 09:53:17.885 -07:00 [INF] Now listening on: http://localhost:5258
+2025-04-19 09:53:17.929 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-19 09:53:17.930 -07:00 [INF] Hosting environment: Development
+2025-04-19 09:53:17.930 -07:00 [INF] Content root path: E:\Andrii\Documents\ASP.Net Projects\Customer-And-Orders.API\Customer-And-Orders.API
+2025-04-19 09:53:18.162 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/index.html - null null
+2025-04-19 09:53:18.244 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/index.html - 200 null text/html;charset=utf-8 85.7058ms
+2025-04-19 09:53:18.247 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-19 09:53:18.251 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 4.702ms
+2025-04-19 09:53:18.268 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_vs/browserLink - null null
+2025-04-19 09:53:18.291 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.1545ms
+2025-04-19 09:53:18.312 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - null null
+2025-04-19 09:53:18.320 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.3934ms
+2025-04-19 09:53:29.077 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7200/api/Auth/sign-in - application/json 53
+2025-04-19 09:53:29.104 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.AuthController.Login (Customer-And-Orders.API)'
+2025-04-19 09:53:29.116 -07:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Customer_And_Orders.BAL.Models.LoginUserDTO) on controller Customer_And_Orders.API.Controllers.AuthController (Customer-And-Orders.API).
+2025-04-19 09:53:29.191 -07:00 [INF] Signing in chema
+2025-04-19 09:53:29.194 -07:00 [INF] Trying to sign in chema
+2025-04-19 09:53:29.649 -07:00 [INF] Executed DbCommand (20ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[RefreshExpiry], [u].[RefreshToken], [u].[Role], [u].[Username]
+FROM [User] AS [u]
+WHERE [u].[Username] = @__username_0
+2025-04-19 09:53:29.859 -07:00 [INF] Executed DbCommand (3ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [User] SET [RefreshExpiry] = @p0, [RefreshToken] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2025-04-19 09:53:29.866 -07:00 [INF] User chema signed in successfuly
+2025-04-19 09:53:29.866 -07:00 [INF] User chema signed in!
+2025-04-19 09:53:29.871 -07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-19 09:53:29.876 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.AuthController.Login (Customer-And-Orders.API) in 757.239ms
+2025-04-19 09:53:29.877 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.AuthController.Login (Customer-And-Orders.API)'
+2025-04-19 09:53:29.881 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7200/api/Auth/sign-in - 200 null application/json; charset=utf-8 804.1897ms
+2025-04-19 09:53:42.156 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?SortByDate=desc - null null
+2025-04-19 09:53:42.178 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:53:42.182 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 09:53:42.189 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 09:53:42.191 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 09:53:42.205 -07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[Id]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 09:53:42.213 -07:00 [INF] Recived all orders for user 1
+2025-04-19 09:53:42.214 -07:00 [INF] Orders recieved!
+2025-04-19 09:53:42.214 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 09:53:42.219 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 34.5553ms
+2025-04-19 09:53:42.220 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:53:42.220 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?SortByDate=desc - 200 null application/json; charset=utf-8 64.6047ms
+2025-04-19 09:53:48.444 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?SortByDate=asc - null null
+2025-04-19 09:53:48.450 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:53:48.451 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 09:53:48.454 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 09:53:48.454 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 09:53:48.484 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[Id]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 09:53:48.485 -07:00 [INF] Recived all orders for user 1
+2025-04-19 09:53:48.486 -07:00 [INF] Orders recieved!
+2025-04-19 09:53:48.486 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 09:53:48.487 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 34.9089ms
+2025-04-19 09:53:48.488 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:53:48.489 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?SortByDate=asc - 200 null application/json; charset=utf-8 45.6227ms
+2025-04-19 09:55:44.800 -07:00 [INF] User profile is available. Using 'C:\Users\Andrii\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-19 09:55:44.917 -07:00 [INF] Now listening on: https://localhost:7200
+2025-04-19 09:55:44.918 -07:00 [INF] Now listening on: http://localhost:5258
+2025-04-19 09:55:44.965 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-19 09:55:44.966 -07:00 [INF] Hosting environment: Development
+2025-04-19 09:55:44.967 -07:00 [INF] Content root path: E:\Andrii\Documents\ASP.Net Projects\Customer-And-Orders.API\Customer-And-Orders.API
+2025-04-19 09:55:45.256 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/index.html - null null
+2025-04-19 09:55:45.341 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/index.html - 200 null text/html;charset=utf-8 89.3025ms
+2025-04-19 09:55:45.344 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-19 09:55:45.350 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 5.867ms
+2025-04-19 09:55:45.366 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_vs/browserLink - null null
+2025-04-19 09:55:45.388 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.8828ms
+2025-04-19 09:55:45.414 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - null null
+2025-04-19 09:55:45.423 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.2608ms
+2025-04-19 09:56:05.746 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?SortByDate=true - null null
+2025-04-19 09:56:05.797 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:56:05.810 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 09:56:05.879 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 09:56:05.883 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 09:56:06.333 -07:00 [INF] Executed DbCommand (20ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[Id]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 09:56:06.369 -07:00 [INF] Recived all orders for user 1
+2025-04-19 09:56:06.370 -07:00 [INF] Orders recieved!
+2025-04-19 09:56:06.374 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 09:56:06.382 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 569.4296ms
+2025-04-19 09:56:06.384 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:56:06.388 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?SortByDate=true - 200 null application/json; charset=utf-8 641.3533ms
+2025-04-19 09:56:10.667 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?SortByDate=false - null null
+2025-04-19 09:56:10.672 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:56:10.673 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 09:56:10.675 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 09:56:10.676 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 09:56:10.691 -07:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[Id]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 09:56:10.692 -07:00 [INF] Recived all orders for user 1
+2025-04-19 09:56:10.693 -07:00 [INF] Orders recieved!
+2025-04-19 09:56:10.694 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 09:56:10.695 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 20.7051ms
+2025-04-19 09:56:10.696 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:56:10.697 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?SortByDate=false - 200 null application/json; charset=utf-8 29.6969ms
+2025-04-19 09:56:11.689 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?SortByDate=false - null null
+2025-04-19 09:56:11.693 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:56:11.694 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 09:56:11.697 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 09:56:11.697 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 09:56:11.726 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[Id]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 09:56:11.727 -07:00 [INF] Recived all orders for user 1
+2025-04-19 09:56:11.728 -07:00 [INF] Orders recieved!
+2025-04-19 09:56:11.728 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 09:56:11.729 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 34.6756ms
+2025-04-19 09:56:11.730 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 09:56:11.731 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?SortByDate=false - 200 null application/json; charset=utf-8 43.1575ms
+2025-04-19 10:13:05.017 -07:00 [INF] User profile is available. Using 'C:\Users\Andrii\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-19 10:13:05.129 -07:00 [INF] Now listening on: https://localhost:7200
+2025-04-19 10:13:05.130 -07:00 [INF] Now listening on: http://localhost:5258
+2025-04-19 10:13:05.182 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-19 10:13:05.183 -07:00 [INF] Hosting environment: Development
+2025-04-19 10:13:05.184 -07:00 [INF] Content root path: E:\Andrii\Documents\ASP.Net Projects\Customer-And-Orders.API\Customer-And-Orders.API
+2025-04-19 10:13:05.395 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/index.html - null null
+2025-04-19 10:13:05.490 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/index.html - 200 null text/html;charset=utf-8 99.8923ms
+2025-04-19 10:13:05.494 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-19 10:13:05.497 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 4.0528ms
+2025-04-19 10:13:05.517 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_vs/browserLink - null null
+2025-04-19 10:13:05.538 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.8204ms
+2025-04-19 10:13:05.560 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - null null
+2025-04-19 10:13:05.568 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.6902ms
+2025-04-19 10:13:18.484 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7200/api/Auth/sign-in - application/json 53
+2025-04-19 10:13:18.513 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.AuthController.Login (Customer-And-Orders.API)'
+2025-04-19 10:13:18.526 -07:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Customer_And_Orders.BAL.Models.LoginUserDTO) on controller Customer_And_Orders.API.Controllers.AuthController (Customer-And-Orders.API).
+2025-04-19 10:13:18.608 -07:00 [INF] Signing in chema
+2025-04-19 10:13:18.612 -07:00 [INF] Trying to sign in chema
+2025-04-19 10:13:19.085 -07:00 [INF] Executed DbCommand (21ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[RefreshExpiry], [u].[RefreshToken], [u].[Role], [u].[Username]
+FROM [User] AS [u]
+WHERE [u].[Username] = @__username_0
+2025-04-19 10:13:19.298 -07:00 [INF] Executed DbCommand (3ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [User] SET [RefreshExpiry] = @p0, [RefreshToken] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2025-04-19 10:13:19.306 -07:00 [INF] User chema signed in successfuly
+2025-04-19 10:13:19.306 -07:00 [INF] User chema signed in!
+2025-04-19 10:13:19.311 -07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-19 10:13:19.316 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.AuthController.Login (Customer-And-Orders.API) in 787.6779ms
+2025-04-19 10:13:19.318 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.AuthController.Login (Customer-And-Orders.API)'
+2025-04-19 10:13:19.322 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7200/api/Auth/sign-in - 200 null application/json; charset=utf-8 837.0979ms
+2025-04-19 10:13:34.543 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?SortByDate=true - null null
+2025-04-19 10:13:34.568 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 10:13:34.573 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 10:13:34.581 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 10:13:34.582 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 10:13:34.599 -07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[CreatedAt] DESC, [o].[Id]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 10:13:34.607 -07:00 [INF] Recived all orders for user 1
+2025-04-19 10:13:34.608 -07:00 [INF] Orders recieved!
+2025-04-19 10:13:34.608 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 10:13:34.613 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 38.2864ms
+2025-04-19 10:13:34.614 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 10:13:34.615 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?SortByDate=true - 200 null application/json; charset=utf-8 71.855ms
+2025-04-19 10:13:40.841 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?SortByDate=false - null null
+2025-04-19 10:13:40.846 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 10:13:40.847 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 10:13:40.849 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 10:13:40.849 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 10:13:40.880 -07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[CreatedAt], [o].[Id]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 10:13:40.882 -07:00 [INF] Recived all orders for user 1
+2025-04-19 10:13:40.882 -07:00 [INF] Orders recieved!
+2025-04-19 10:13:40.883 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 10:13:40.884 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 35.7886ms
+2025-04-19 10:13:40.885 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 10:13:40.885 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?SortByDate=false - 200 null application/json; charset=utf-8 44.168ms
+2025-04-19 10:13:50.598 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?Search=SecondOrder - null null
+2025-04-19 10:13:50.601 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 10:13:50.602 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 10:13:50.605 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 10:13:50.606 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 10:13:50.609 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[CreatedAt], [o].[Id]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 10:13:50.611 -07:00 [INF] Recived all orders for user 1
+2025-04-19 10:13:50.611 -07:00 [INF] Orders recieved!
+2025-04-19 10:13:50.612 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 10:13:50.613 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 8.9735ms
+2025-04-19 10:13:50.614 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 10:13:50.614 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?Search=SecondOrder - 200 null application/json; charset=utf-8 16.3252ms
+2025-04-19 10:15:41.854 -07:00 [INF] User profile is available. Using 'C:\Users\Andrii\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-19 10:15:41.978 -07:00 [INF] Now listening on: https://localhost:7200
+2025-04-19 10:15:41.979 -07:00 [INF] Now listening on: http://localhost:5258
+2025-04-19 10:15:42.033 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-19 10:15:42.034 -07:00 [INF] Hosting environment: Development
+2025-04-19 10:15:42.035 -07:00 [INF] Content root path: E:\Andrii\Documents\ASP.Net Projects\Customer-And-Orders.API\Customer-And-Orders.API
+2025-04-19 10:15:42.302 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/index.html - null null
+2025-04-19 10:15:42.394 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/index.html - 200 null text/html;charset=utf-8 95.8022ms
+2025-04-19 10:15:42.398 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-19 10:15:42.403 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 5.1839ms
+2025-04-19 10:15:42.419 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_vs/browserLink - null null
+2025-04-19 10:15:42.441 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.358ms
+2025-04-19 10:15:42.470 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - null null
+2025-04-19 10:15:42.480 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.1701ms
+2025-04-19 10:15:48.112 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?Search=SecondOrder - null null
+2025-04-19 10:15:48.168 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 10:15:48.183 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 10:15:48.260 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 10:15:48.264 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 10:15:48.753 -07:00 [INF] Executed DbCommand (29ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__queryParams_Search_1='?' (Size = 4000), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0 AND [o].[Title] = @__queryParams_Search_1
+ORDER BY [o].[CreatedAt], [o].[Id]
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2025-04-19 10:15:48.794 -07:00 [INF] Recived all orders for user 1
+2025-04-19 10:15:48.795 -07:00 [INF] Orders recieved!
+2025-04-19 10:15:48.800 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 10:15:48.809 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 623.3123ms
+2025-04-19 10:15:48.810 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 10:15:48.813 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?Search=SecondOrder - 200 null application/json; charset=utf-8 701.9755ms
+2025-04-19 10:17:16.158 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?Search=desc - null null
+2025-04-19 10:17:16.163 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 10:17:16.165 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 10:17:16.168 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 10:17:16.169 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 10:17:16.180 -07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__queryParams_Search_1='?' (Size = 4000), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0 AND [o].[Title] = @__queryParams_Search_1
+ORDER BY [o].[CreatedAt], [o].[Id]
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2025-04-19 10:17:16.182 -07:00 [INF] Recived all orders for user 1
+2025-04-19 10:17:16.182 -07:00 [INF] Orders recieved!
+2025-04-19 10:17:16.183 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 10:17:16.184 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 17.1773ms
+2025-04-19 10:17:16.185 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 10:17:16.186 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?Search=desc - 200 null application/json; charset=utf-8 28.5752ms
+2025-04-19 10:17:22.353 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?Search=asc - null null
+2025-04-19 10:17:22.358 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 10:17:22.359 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 10:17:22.363 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 10:17:22.363 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 10:17:22.391 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__queryParams_Search_1='?' (Size = 4000), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0 AND [o].[Title] = @__queryParams_Search_1
+ORDER BY [o].[CreatedAt], [o].[Id]
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2025-04-19 10:17:22.392 -07:00 [INF] Recived all orders for user 1
+2025-04-19 10:17:22.393 -07:00 [INF] Orders recieved!
+2025-04-19 10:17:22.394 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 10:17:22.394 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 34.121ms
+2025-04-19 10:17:22.396 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 10:17:22.397 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?Search=asc - 200 null application/json; charset=utf-8 44.2399ms
+2025-04-19 10:17:28.931 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?Sort=desc - null null
+2025-04-19 10:17:28.934 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 10:17:28.935 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 10:17:28.937 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 10:17:28.937 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 10:17:28.944 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[CreatedAt], [o].[Id] DESC
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 10:17:28.946 -07:00 [INF] Recived all orders for user 1
+2025-04-19 10:17:28.946 -07:00 [INF] Orders recieved!
+2025-04-19 10:17:28.947 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 10:17:28.947 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 11.0111ms
+2025-04-19 10:17:28.950 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 10:17:28.951 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?Sort=desc - 200 null application/json; charset=utf-8 20.6732ms
+2025-04-19 10:17:32.532 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?Sort=asc - null null
+2025-04-19 10:17:32.535 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 10:17:32.536 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 10:17:32.537 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 10:17:32.538 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 10:17:32.542 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[CreatedAt], [o].[Id]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 10:17:32.544 -07:00 [INF] Recived all orders for user 1
+2025-04-19 10:17:32.545 -07:00 [INF] Orders recieved!
+2025-04-19 10:17:32.545 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 10:17:32.546 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 8.9871ms
+2025-04-19 10:17:32.547 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 10:17:32.548 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?Sort=asc - 200 null application/json; charset=utf-8 15.729ms
+2025-04-19 10:17:34.909 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?Sort=desc - null null
+2025-04-19 10:17:34.911 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 10:17:34.912 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 10:17:34.914 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 10:17:34.914 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 10:17:34.916 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[CreatedAt], [o].[Id] DESC
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 10:17:34.918 -07:00 [INF] Recived all orders for user 1
+2025-04-19 10:17:34.918 -07:00 [INF] Orders recieved!
+2025-04-19 10:17:34.919 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 10:17:34.920 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 6.2598ms
+2025-04-19 10:17:34.921 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 10:17:34.921 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?Sort=desc - 200 null application/json; charset=utf-8 12.3418ms
+2025-04-19 10:17:45.930 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?Sort=desc - null null
+2025-04-19 10:17:45.932 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 10:17:45.933 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 10:17:45.934 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 10:17:45.935 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 10:17:45.937 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[CreatedAt], [o].[Id] DESC
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 10:17:45.939 -07:00 [INF] Recived all orders for user 1
+2025-04-19 10:17:45.939 -07:00 [INF] Orders recieved!
+2025-04-19 10:17:45.939 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 10:17:45.940 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 6.2886ms
+2025-04-19 10:17:45.941 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 10:17:45.942 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?Sort=desc - 200 null application/json; charset=utf-8 12.2544ms
+2025-04-19 10:17:48.674 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?Sort=desc - null null
+2025-04-19 10:17:48.676 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 10:17:48.677 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 10:17:48.678 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 10:17:48.679 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 10:17:48.681 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[CreatedAt], [o].[Id] DESC
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 10:17:48.683 -07:00 [INF] Recived all orders for user 1
+2025-04-19 10:17:48.683 -07:00 [INF] Orders recieved!
+2025-04-19 10:17:48.683 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 10:17:48.684 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 6.3027ms
+2025-04-19 10:17:48.685 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 10:17:48.686 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?Sort=desc - 200 null application/json; charset=utf-8 12.2041ms
+2025-04-19 10:56:28.062 -07:00 [INF] User profile is available. Using 'C:\Users\Andrii\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-19 10:56:28.176 -07:00 [INF] Now listening on: https://localhost:7200
+2025-04-19 10:56:28.177 -07:00 [INF] Now listening on: http://localhost:5258
+2025-04-19 10:56:28.289 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-19 10:56:28.290 -07:00 [INF] Hosting environment: Development
+2025-04-19 10:56:28.291 -07:00 [INF] Content root path: E:\Andrii\Documents\ASP.Net Projects\Customer-And-Orders.API\Customer-And-Orders.API
+2025-04-19 10:56:28.457 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/index.html - null null
+2025-04-19 10:56:28.541 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/index.html - 200 null text/html;charset=utf-8 88.0739ms
+2025-04-19 10:56:28.547 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-19 10:56:28.552 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 6.3486ms
+2025-04-19 10:56:28.566 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_vs/browserLink - null null
+2025-04-19 10:56:28.591 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.6406ms
+2025-04-19 10:56:28.616 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - null null
+2025-04-19 10:56:28.625 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.0749ms
+2025-04-19 10:56:37.530 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7200/api/Auth/sign-in - application/json 53
+2025-04-19 10:56:37.558 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.AuthController.Login (Customer-And-Orders.API)'
+2025-04-19 10:56:37.571 -07:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Customer_And_Orders.BAL.Models.LoginUserDTO) on controller Customer_And_Orders.API.Controllers.AuthController (Customer-And-Orders.API).
+2025-04-19 10:56:37.648 -07:00 [INF] Signing in chema
+2025-04-19 10:56:37.652 -07:00 [INF] Trying to sign in chema
+2025-04-19 10:56:38.094 -07:00 [INF] Executed DbCommand (19ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[RefreshExpiry], [u].[RefreshToken], [u].[Role], [u].[Username]
+FROM [User] AS [u]
+WHERE [u].[Username] = @__username_0
+2025-04-19 10:56:38.299 -07:00 [INF] Executed DbCommand (3ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [User] SET [RefreshExpiry] = @p0, [RefreshToken] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2025-04-19 10:56:38.306 -07:00 [INF] User chema signed in successfuly
+2025-04-19 10:56:38.307 -07:00 [INF] User chema signed in!
+2025-04-19 10:56:38.311 -07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-19 10:56:38.316 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.AuthController.Login (Customer-And-Orders.API) in 742.8198ms
+2025-04-19 10:56:38.318 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.AuthController.Login (Customer-And-Orders.API)'
+2025-04-19 10:56:38.321 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7200/api/Auth/sign-in - 200 null application/json; charset=utf-8 790.7859ms
+2025-04-19 10:56:59.954 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?Sort=desc - null null
+2025-04-19 10:56:59.978 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 10:56:59.982 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 10:56:59.988 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 10:56:59.990 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 10:57:00.006 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[CreatedAt]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 10:57:00.014 -07:00 [INF] Recived all orders for user 1
+2025-04-19 10:57:00.014 -07:00 [INF] Orders recieved!
+2025-04-19 10:57:00.015 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 10:57:00.020 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 36.7284ms
+2025-04-19 10:57:00.021 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 10:57:00.022 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?Sort=desc - 200 null application/json; charset=utf-8 68.2042ms
+2025-04-19 10:57:04.265 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?Sort=asc - null null
+2025-04-19 10:57:04.270 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 10:57:04.271 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 10:57:04.273 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 10:57:04.273 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 10:57:04.302 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[CreatedAt]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 10:57:04.305 -07:00 [INF] Recived all orders for user 1
+2025-04-19 10:57:04.305 -07:00 [INF] Orders recieved!
+2025-04-19 10:57:04.306 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 10:57:04.307 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 34.8981ms
+2025-04-19 10:57:04.307 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 10:57:04.308 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?Sort=asc - 200 null application/json; charset=utf-8 43.7711ms
+2025-04-19 10:57:08.103 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?Sort=desc - null null
+2025-04-19 10:57:08.106 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 10:57:08.106 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 10:57:08.109 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 10:57:08.109 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 10:57:08.111 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[CreatedAt]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 10:57:08.113 -07:00 [INF] Recived all orders for user 1
+2025-04-19 10:57:08.113 -07:00 [INF] Orders recieved!
+2025-04-19 10:57:08.114 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 10:57:08.115 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 7.4966ms
+2025-04-19 10:57:08.116 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 10:57:08.117 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?Sort=desc - 200 null application/json; charset=utf-8 14.0207ms
+2025-04-19 11:02:02.388 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7200/api/Order/create-order - application/json 126
+2025-04-19 11:02:02.392 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.CreateOrderAsync (Customer-And-Orders.API)'
+2025-04-19 11:02:02.394 -07:00 [INF] Route matched with {action = "CreateOrder", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateOrderAsync(Customer_And_Orders.BAL.Models.CreateOrderDTO) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 11:02:02.400 -07:00 [INF] Creating order
+2025-04-19 11:02:02.401 -07:00 [INF] Adding order to database!
+2025-04-19 11:02:02.423 -07:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Order] ([CreatedAt], [Description], [Status], [Title], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-04-19 11:02:02.435 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+ORDER BY [o].[Id] DESC
+2025-04-19 11:02:02.437 -07:00 [INF] Order added to database successfuly with id 5
+2025-04-19 11:02:02.437 -07:00 [INF] Order created
+2025-04-19 11:02:02.438 -07:00 [INF] Executing OkObjectResult, writing value of type 'Customer_And_Orders.BAL.Models.CreateOrderDTO'.
+2025-04-19 11:02:02.439 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.CreateOrderAsync (Customer-And-Orders.API) in 44.3725ms
+2025-04-19 11:02:02.440 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.CreateOrderAsync (Customer-And-Orders.API)'
+2025-04-19 11:02:02.441 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7200/api/Order/create-order - 200 null application/json; charset=utf-8 53.3396ms
+2025-04-19 11:02:06.141 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?Sort=desc - null null
+2025-04-19 11:02:06.143 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 11:02:06.144 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 11:02:06.145 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 11:02:06.146 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 11:02:06.148 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[CreatedAt]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 11:02:06.150 -07:00 [INF] Recived all orders for user 1
+2025-04-19 11:02:06.150 -07:00 [INF] Orders recieved!
+2025-04-19 11:02:06.151 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 11:02:06.152 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 6.3683ms
+2025-04-19 11:02:06.152 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 11:02:06.153 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?Sort=desc - 200 null application/json; charset=utf-8 12.3409ms
+2025-04-19 11:02:12.866 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all - null null
+2025-04-19 11:02:12.868 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 11:02:12.869 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 11:02:12.870 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 11:02:12.871 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 11:02:12.873 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[CreatedAt]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 11:02:12.875 -07:00 [INF] Recived all orders for user 1
+2025-04-19 11:02:12.875 -07:00 [INF] Orders recieved!
+2025-04-19 11:02:12.875 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 11:02:12.876 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 6.3181ms
+2025-04-19 11:02:12.877 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 11:02:12.878 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all - 200 null application/json; charset=utf-8 12.5212ms
+2025-04-19 11:02:15.452 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?Sort=desc - null null
+2025-04-19 11:02:15.454 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 11:02:15.455 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 11:02:15.456 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 11:02:15.457 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 11:02:15.458 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[CreatedAt]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 11:02:15.460 -07:00 [INF] Recived all orders for user 1
+2025-04-19 11:02:15.461 -07:00 [INF] Orders recieved!
+2025-04-19 11:02:15.461 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 11:02:15.462 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 6.0474ms
+2025-04-19 11:02:15.463 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 11:02:15.464 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?Sort=desc - 200 null application/json; charset=utf-8 12.1847ms
+2025-04-19 11:06:55.053 -07:00 [INF] User profile is available. Using 'C:\Users\Andrii\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-19 11:06:55.169 -07:00 [INF] Now listening on: https://localhost:7200
+2025-04-19 11:06:55.169 -07:00 [INF] Now listening on: http://localhost:5258
+2025-04-19 11:06:55.218 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-19 11:06:55.219 -07:00 [INF] Hosting environment: Development
+2025-04-19 11:06:55.219 -07:00 [INF] Content root path: E:\Andrii\Documents\ASP.Net Projects\Customer-And-Orders.API\Customer-And-Orders.API
+2025-04-19 11:06:55.402 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/index.html - null null
+2025-04-19 11:06:55.485 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/index.html - 200 null text/html;charset=utf-8 88.7276ms
+2025-04-19 11:06:55.488 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-19 11:06:55.492 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 4.0576ms
+2025-04-19 11:06:55.507 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_vs/browserLink - null null
+2025-04-19 11:06:55.529 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.9653ms
+2025-04-19 11:06:55.554 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - null null
+2025-04-19 11:06:55.564 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.1569ms
+2025-04-19 11:06:59.941 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?Sort=desc - null null
+2025-04-19 11:06:59.995 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 11:07:00.010 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 11:07:00.081 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 11:07:00.085 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 11:07:00.535 -07:00 [INF] Executed DbCommand (21ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[Id] DESC
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 11:07:00.569 -07:00 [INF] Recived all orders for user 1
+2025-04-19 11:07:00.570 -07:00 [INF] Orders recieved!
+2025-04-19 11:07:00.575 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 11:07:00.582 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 569.0981ms
+2025-04-19 11:07:00.583 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 11:07:00.587 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?Sort=desc - 200 null application/json; charset=utf-8 646.1847ms
+2025-04-19 11:07:05.184 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all - null null
+2025-04-19 11:07:05.188 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 11:07:05.189 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 11:07:05.192 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 11:07:05.193 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 11:07:05.209 -07:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[Id]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 11:07:05.210 -07:00 [INF] Recived all orders for user 1
+2025-04-19 11:07:05.211 -07:00 [INF] Orders recieved!
+2025-04-19 11:07:05.212 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 11:07:05.213 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 21.98ms
+2025-04-19 11:07:05.214 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 11:07:05.215 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all - 200 null application/json; charset=utf-8 30.7826ms
+2025-04-19 11:07:09.256 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all?SortByDate=true - null null
+2025-04-19 11:07:09.260 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 11:07:09.261 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 11:07:09.265 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 11:07:09.266 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 11:07:09.297 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[CreatedAt] DESC, [o].[Id] DESC
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 11:07:09.299 -07:00 [INF] Recived all orders for user 1
+2025-04-19 11:07:09.299 -07:00 [INF] Orders recieved!
+2025-04-19 11:07:09.300 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 11:07:09.301 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 37.7183ms
+2025-04-19 11:07:09.302 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 11:07:09.303 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all?SortByDate=true - 200 null application/json; charset=utf-8 47.4167ms
+2025-04-19 17:36:19.706 -07:00 [INF] User profile is available. Using 'C:\Users\Andrii\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-19 17:36:19.829 -07:00 [INF] Now listening on: https://localhost:7200
+2025-04-19 17:36:19.829 -07:00 [INF] Now listening on: http://localhost:5258
+2025-04-19 17:36:19.877 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-19 17:36:19.878 -07:00 [INF] Hosting environment: Development
+2025-04-19 17:36:19.879 -07:00 [INF] Content root path: E:\Andrii\Documents\ASP.Net Projects\Customer-And-Orders.API\Customer-And-Orders.API
+2025-04-19 17:36:20.224 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/index.html - null null
+2025-04-19 17:36:20.328 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/index.html - 200 null text/html;charset=utf-8 107.3907ms
+2025-04-19 17:36:20.331 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-19 17:36:20.335 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 4.198ms
+2025-04-19 17:36:20.352 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_vs/browserLink - null null
+2025-04-19 17:36:20.408 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_vs/browserLink - 200 null text/javascript; charset=UTF-8 56.2931ms
+2025-04-19 17:36:20.429 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - null null
+2025-04-19 17:36:20.439 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.1441ms
+2025-04-19 17:36:31.662 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7200/api/Auth/sign-in - application/json 53
+2025-04-19 17:36:31.703 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.AuthController.Login (Customer-And-Orders.API)'
+2025-04-19 17:36:31.721 -07:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Customer_And_Orders.BAL.Models.LoginUserDTO) on controller Customer_And_Orders.API.Controllers.AuthController (Customer-And-Orders.API).
+2025-04-19 17:36:31.859 -07:00 [INF] Signing in chema
+2025-04-19 17:36:31.863 -07:00 [INF] Trying to sign in chema
+2025-04-19 17:36:32.435 -07:00 [INF] Executed DbCommand (24ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[RefreshExpiry], [u].[RefreshToken], [u].[Role], [u].[Username]
+FROM [User] AS [u]
+WHERE [u].[Username] = @__username_0
+2025-04-19 17:36:32.646 -07:00 [INF] Executed DbCommand (4ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [User] SET [RefreshExpiry] = @p0, [RefreshToken] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2025-04-19 17:36:32.653 -07:00 [INF] User chema signed in successfuly
+2025-04-19 17:36:32.654 -07:00 [INF] User chema signed in!
+2025-04-19 17:36:32.659 -07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-19 17:36:32.664 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.AuthController.Login (Customer-And-Orders.API) in 940.224ms
+2025-04-19 17:36:32.665 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.AuthController.Login (Customer-And-Orders.API)'
+2025-04-19 17:36:32.669 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7200/api/Auth/sign-in - 200 null application/json; charset=utf-8 1006.5227ms
+2025-04-19 17:36:50.959 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all - null null
+2025-04-19 17:36:50.984 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 17:36:50.988 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 17:36:50.991 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 1.7129ms
+2025-04-19 17:36:50.993 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 17:36:50.995 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Customer_And_Orders.BAL.Services.Interfaces.IOrderService' while attempting to activate 'Customer_And_Orders.API.Controllers.OrderController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method101(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-04-19 17:36:51.018 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all - 500 null text/plain; charset=utf-8 58.3484ms
+2025-04-19 17:38:36.326 -07:00 [INF] User profile is available. Using 'C:\Users\Andrii\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-19 17:38:36.443 -07:00 [INF] Now listening on: https://localhost:7200
+2025-04-19 17:38:36.444 -07:00 [INF] Now listening on: http://localhost:5258
+2025-04-19 17:38:36.542 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-19 17:38:36.542 -07:00 [INF] Hosting environment: Development
+2025-04-19 17:38:36.543 -07:00 [INF] Content root path: E:\Andrii\Documents\ASP.Net Projects\Customer-And-Orders.API\Customer-And-Orders.API
+2025-04-19 17:38:36.860 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/index.html - null null
+2025-04-19 17:38:36.950 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/index.html - 200 null text/html;charset=utf-8 94.6346ms
+2025-04-19 17:38:36.953 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-19 17:38:36.957 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 4.129ms
+2025-04-19 17:38:36.971 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_vs/browserLink - null null
+2025-04-19 17:38:36.995 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.3801ms
+2025-04-19 17:38:37.017 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - null null
+2025-04-19 17:38:37.029 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.6459ms
+2025-04-19 17:38:41.830 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/api/Order/get-all - null null
+2025-04-19 17:38:41.883 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 17:38:41.897 -07:00 [INF] Route matched with {action = "GetAllOrdersByUserId", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllOrdersByUserIdAsync(Customer_And_Orders.DAL.Data.Entities.QueryParams) on controller Customer_And_Orders.API.Controllers.OrderController (Customer-And-Orders.API).
+2025-04-19 17:38:41.969 -07:00 [INF] Getting all user's 1 orders
+2025-04-19 17:38:41.973 -07:00 [INF] Getting all user's: 1 orders from database
+2025-04-19 17:38:42.445 -07:00 [INF] Executed DbCommand (21ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[Id]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2025-04-19 17:38:42.480 -07:00 [INF] Recived all orders for user 1
+2025-04-19 17:38:42.481 -07:00 [INF] Orders recieved!
+2025-04-19 17:38:42.485 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 17:38:42.493 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API) in 593.2878ms
+2025-04-19 17:38:42.494 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.OrderController.GetAllOrdersByUserIdAsync (Customer-And-Orders.API)'
+2025-04-19 17:38:42.498 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/api/Order/get-all - 200 null application/json; charset=utf-8 668.7354ms
+2025-04-19 18:55:13.380 -07:00 [INF] User profile is available. Using 'C:\Users\Andrii\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-19 18:55:13.496 -07:00 [INF] Now listening on: https://localhost:7200
+2025-04-19 18:55:13.496 -07:00 [INF] Now listening on: http://localhost:5258
+2025-04-19 18:55:13.547 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-19 18:55:13.548 -07:00 [INF] Hosting environment: Development
+2025-04-19 18:55:13.548 -07:00 [INF] Content root path: E:\Andrii\Documents\ASP.Net Projects\Customer-And-Orders.API\Customer-And-Orders.API
+2025-04-19 18:55:59.433 -07:00 [INF] User profile is available. Using 'C:\Users\Andrii\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-19 18:55:59.541 -07:00 [INF] Now listening on: https://localhost:7200
+2025-04-19 18:55:59.542 -07:00 [INF] Now listening on: http://localhost:5258
+2025-04-19 18:55:59.596 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-19 18:55:59.598 -07:00 [INF] Hosting environment: Development
+2025-04-19 18:55:59.599 -07:00 [INF] Content root path: E:\Andrii\Documents\ASP.Net Projects\Customer-And-Orders.API\Customer-And-Orders.API
+2025-04-19 18:55:59.851 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/index.html - null null
+2025-04-19 18:55:59.949 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/index.html - 200 null text/html;charset=utf-8 101.6497ms
+2025-04-19 18:55:59.952 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-19 18:55:59.956 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 4.3669ms
+2025-04-19 18:55:59.973 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_vs/browserLink - null null
+2025-04-19 18:56:00.036 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_vs/browserLink - 200 null text/javascript; charset=UTF-8 63.1135ms
+2025-04-19 18:56:00.057 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - null null
+2025-04-19 18:56:00.069 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.4247ms
+2025-04-19 18:56:11.236 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7200/api/Auth/sign-in - application/json 49
+2025-04-19 18:56:11.265 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.AuthController.Login (Customer-And-Orders.API)'
+2025-04-19 18:56:11.277 -07:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Customer_And_Orders.BAL.Models.LoginUserDTO) on controller Customer_And_Orders.API.Controllers.AuthController (Customer-And-Orders.API).
+2025-04-19 18:56:11.356 -07:00 [INF] Signing in admin
+2025-04-19 18:56:11.360 -07:00 [INF] Trying to sign in admin
+2025-04-19 18:56:11.809 -07:00 [INF] Executed DbCommand (21ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[RefreshExpiry], [u].[RefreshToken], [u].[Role], [u].[Username]
+FROM [User] AS [u]
+WHERE [u].[Username] = @__username_0
+2025-04-19 18:56:11.821 -07:00 [WRN] Username or password is incorrect!
+2025-04-19 18:56:11.821 -07:00 [INF] User admin signed in!
+2025-04-19 18:56:11.825 -07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-19 18:56:11.831 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.AuthController.Login (Customer-And-Orders.API) in 550.2911ms
+2025-04-19 18:56:11.832 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.AuthController.Login (Customer-And-Orders.API)'
+2025-04-19 18:56:11.835 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7200/api/Auth/sign-in - 200 null application/json; charset=utf-8 599.059ms
+2025-04-19 18:56:28.126 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7200/api/Auth/sign-up - application/json 89
+2025-04-19 18:56:28.130 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.AuthController.Register (Customer-And-Orders.API)'
+2025-04-19 18:56:28.135 -07:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Customer_And_Orders.BAL.Models.CreateUserDTO) on controller Customer_And_Orders.API.Controllers.AuthController (Customer-And-Orders.API).
+2025-04-19 18:56:28.140 -07:00 [INF] Trying to sign up user: admin
+2025-04-19 18:56:28.267 -07:00 [INF] Addint admin to database
+2025-04-19 18:56:28.288 -07:00 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]
+        WHERE [u].[Username] = @__user_Username_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-04-19 18:56:28.362 -07:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [User] ([Email], [PasswordHash], [RefreshExpiry], [RefreshToken], [Role], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-04-19 18:56:28.374 -07:00 [INF] User admin signed up successfuly
+2025-04-19 18:56:28.375 -07:00 [INF] Executing OkObjectResult, writing value of type 'Customer_And_Orders.BAL.Models.CreateUserDTO'.
+2025-04-19 18:56:28.376 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.AuthController.Register (Customer-And-Orders.API) in 239.8677ms
+2025-04-19 18:56:28.377 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.AuthController.Register (Customer-And-Orders.API)'
+2025-04-19 18:56:28.379 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7200/api/Auth/sign-up - 200 null application/json; charset=utf-8 252.9537ms
+2025-04-19 18:56:38.769 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7200/api/Auth/sign-in - application/json 49
+2025-04-19 18:56:38.772 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.AuthController.Login (Customer-And-Orders.API)'
+2025-04-19 18:56:38.773 -07:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Customer_And_Orders.BAL.Models.LoginUserDTO) on controller Customer_And_Orders.API.Controllers.AuthController (Customer-And-Orders.API).
+2025-04-19 18:56:38.777 -07:00 [INF] Signing in admin
+2025-04-19 18:56:38.777 -07:00 [INF] Trying to sign in admin
+2025-04-19 18:56:38.805 -07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[RefreshExpiry], [u].[RefreshToken], [u].[Role], [u].[Username]
+FROM [User] AS [u]
+WHERE [u].[Username] = @__username_0
+2025-04-19 18:56:38.948 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [User] SET [RefreshExpiry] = @p0, [RefreshToken] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2025-04-19 18:56:38.951 -07:00 [INF] User admin signed in successfuly
+2025-04-19 18:56:38.951 -07:00 [INF] User admin signed in!
+2025-04-19 18:56:38.952 -07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-19 18:56:38.953 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.AuthController.Login (Customer-And-Orders.API) in 178.6088ms
+2025-04-19 18:56:38.954 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.AuthController.Login (Customer-And-Orders.API)'
+2025-04-19 18:56:38.955 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7200/api/Auth/sign-in - 200 null application/json; charset=utf-8 186.218ms
+2025-04-19 18:56:49.755 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/get-clients - null null
+2025-04-19 18:56:49.777 -07:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2025-04-19 18:56:49.779 -07:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2025-04-19 18:56:49.780 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/get-clients - 403 0 null 25.0258ms
+2025-04-19 18:57:59.826 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/get-clients - null null
+2025-04-19 18:57:59.832 -07:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2025-04-19 18:57:59.833 -07:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2025-04-19 18:57:59.833 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/get-clients - 403 0 null 7.0271ms
+2025-04-19 18:58:04.501 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/index.html - null null
+2025-04-19 18:58:04.514 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/index.html - 200 null text/html;charset=utf-8 13.2545ms
+2025-04-19 18:58:04.515 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_vs/browserLink - null null
+2025-04-19 18:58:04.516 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-19 18:58:04.520 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 4.1478ms
+2025-04-19 18:58:04.522 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.2725ms
+2025-04-19 18:58:04.566 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - null null
+2025-04-19 18:58:04.573 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.5101ms
+2025-04-19 18:58:13.100 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/get-clients - null null
+2025-04-19 18:58:13.103 -07:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2025-04-19 18:58:13.103 -07:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2025-04-19 18:58:13.104 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/get-clients - 403 0 null 4.0518ms
+2025-04-19 18:58:46.836 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/get-clients - null null
+2025-04-19 18:58:46.841 -07:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2025-04-19 18:58:46.841 -07:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2025-04-19 18:58:46.842 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/get-clients - 403 0 null 6.263ms
+2025-04-19 18:58:51.977 -07:00 [INF] User profile is available. Using 'C:\Users\Andrii\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-19 18:58:52.080 -07:00 [INF] Now listening on: https://localhost:7200
+2025-04-19 18:58:52.081 -07:00 [INF] Now listening on: http://localhost:5258
+2025-04-19 18:58:52.135 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-19 18:58:52.136 -07:00 [INF] Hosting environment: Development
+2025-04-19 18:58:52.137 -07:00 [INF] Content root path: E:\Andrii\Documents\ASP.Net Projects\Customer-And-Orders.API\Customer-And-Orders.API
+2025-04-19 18:58:52.465 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/index.html - null null
+2025-04-19 18:58:52.545 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/index.html - 200 null text/html;charset=utf-8 83.875ms
+2025-04-19 18:58:52.549 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-19 18:58:52.553 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 4.4838ms
+2025-04-19 18:58:52.567 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_vs/browserLink - null null
+2025-04-19 18:58:52.587 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.8725ms
+2025-04-19 18:58:52.614 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - null null
+2025-04-19 18:58:52.624 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.0493ms
+2025-04-19 18:59:03.007 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7200/api/Auth/sign-in - application/json 49
+2025-04-19 18:59:03.033 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.AuthController.Login (Customer-And-Orders.API)'
+2025-04-19 18:59:03.046 -07:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Customer_And_Orders.BAL.Models.LoginUserDTO) on controller Customer_And_Orders.API.Controllers.AuthController (Customer-And-Orders.API).
+2025-04-19 18:59:03.120 -07:00 [INF] Signing in admin
+2025-04-19 18:59:03.124 -07:00 [INF] Trying to sign in admin
+2025-04-19 18:59:03.566 -07:00 [INF] Executed DbCommand (19ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[RefreshExpiry], [u].[RefreshToken], [u].[Role], [u].[Username]
+FROM [User] AS [u]
+WHERE [u].[Username] = @__username_0
+2025-04-19 18:59:03.767 -07:00 [INF] Executed DbCommand (3ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [User] SET [RefreshExpiry] = @p0, [RefreshToken] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2025-04-19 18:59:03.774 -07:00 [INF] User admin signed in successfuly
+2025-04-19 18:59:03.775 -07:00 [INF] User admin signed in!
+2025-04-19 18:59:03.779 -07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-19 18:59:03.785 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.AuthController.Login (Customer-And-Orders.API) in 736.7886ms
+2025-04-19 18:59:03.786 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.AuthController.Login (Customer-And-Orders.API)'
+2025-04-19 18:59:03.790 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7200/api/Auth/sign-in - 200 null application/json; charset=utf-8 782.8111ms
+2025-04-19 18:59:17.135 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/get-clients - null null
+2025-04-19 18:59:17.158 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.AdminController.GetClientsAsync (Customer-And-Orders.API)'
+2025-04-19 18:59:17.161 -07:00 [INF] Route matched with {action = "GetClients", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetClientsAsync() on controller Customer_And_Orders.API.Controllers.AdminController (Customer-And-Orders.API).
+2025-04-19 18:59:17.164 -07:00 [INF] Request to get clients
+2025-04-19 18:59:17.165 -07:00 [INF] Getting all clients from database
+2025-04-19 18:59:17.180 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[RefreshExpiry], [u].[RefreshToken], [u].[Role], [u].[Username]
+FROM [User] AS [u]
+WHERE [u].[Role] = N'Client'
+2025-04-19 18:59:17.182 -07:00 [INF] Got clients from database
+2025-04-19 18:59:17.183 -07:00 [INF] Clients recived successfuly
+2025-04-19 18:59:17.184 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.User, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 18:59:17.189 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.AdminController.GetClientsAsync (Customer-And-Orders.API) in 25.8078ms
+2025-04-19 18:59:17.190 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.AdminController.GetClientsAsync (Customer-And-Orders.API)'
+2025-04-19 18:59:17.191 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/get-clients - 200 null application/json; charset=utf-8 56.259ms
+2025-04-19 18:59:34.832 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7200/api/Auth/sign-up - application/json 72
+2025-04-19 18:59:34.836 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.AuthController.Register (Customer-And-Orders.API)'
+2025-04-19 18:59:34.839 -07:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Customer_And_Orders.BAL.Models.CreateUserDTO) on controller Customer_And_Orders.API.Controllers.AuthController (Customer-And-Orders.API).
+2025-04-19 18:59:34.844 -07:00 [INF] Trying to sign up user: client
+2025-04-19 18:59:34.966 -07:00 [INF] Addint client to database
+2025-04-19 18:59:35.002 -07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]
+        WHERE [u].[Username] = @__user_Username_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-04-19 18:59:35.021 -07:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [User] ([Email], [PasswordHash], [RefreshExpiry], [RefreshToken], [Role], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-04-19 18:59:35.030 -07:00 [INF] User client signed up successfuly
+2025-04-19 18:59:35.030 -07:00 [INF] Executing OkObjectResult, writing value of type 'Customer_And_Orders.BAL.Models.CreateUserDTO'.
+2025-04-19 18:59:35.032 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.AuthController.Register (Customer-And-Orders.API) in 191.3182ms
+2025-04-19 18:59:35.033 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.AuthController.Register (Customer-And-Orders.API)'
+2025-04-19 18:59:35.033 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7200/api/Auth/sign-up - 200 null application/json; charset=utf-8 201.4488ms
+2025-04-19 18:59:39.082 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/get-clients - null null
+2025-04-19 18:59:39.084 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.AdminController.GetClientsAsync (Customer-And-Orders.API)'
+2025-04-19 18:59:39.085 -07:00 [INF] Route matched with {action = "GetClients", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetClientsAsync() on controller Customer_And_Orders.API.Controllers.AdminController (Customer-And-Orders.API).
+2025-04-19 18:59:39.087 -07:00 [INF] Request to get clients
+2025-04-19 18:59:39.088 -07:00 [INF] Getting all clients from database
+2025-04-19 18:59:39.091 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[RefreshExpiry], [u].[RefreshToken], [u].[Role], [u].[Username]
+FROM [User] AS [u]
+WHERE [u].[Role] = N'Client'
+2025-04-19 18:59:39.094 -07:00 [INF] Got clients from database
+2025-04-19 18:59:39.095 -07:00 [INF] Clients recived successfuly
+2025-04-19 18:59:39.095 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.User, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 18:59:39.097 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.AdminController.GetClientsAsync (Customer-And-Orders.API) in 9.9538ms
+2025-04-19 18:59:39.098 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.AdminController.GetClientsAsync (Customer-And-Orders.API)'
+2025-04-19 18:59:39.099 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/get-clients - 200 null application/json; charset=utf-8 17.5198ms
+2025-04-19 19:00:02.704 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/get-clients-orders/1 - null null
+2025-04-19 19:00:02.706 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.AdminController.GetClientsOrdersAsync (Customer-And-Orders.API)'
+2025-04-19 19:00:02.709 -07:00 [INF] Route matched with {action = "GetClientsOrders", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetClientsOrdersAsync(Int32) on controller Customer_And_Orders.API.Controllers.AdminController (Customer-And-Orders.API).
+2025-04-19 19:00:02.714 -07:00 [INF] Request to get client's 0 orders
+2025-04-19 19:00:02.715 -07:00 [INF] Trying to get all client's 0 orders
+2025-04-19 19:00:02.720 -07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__clientId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__clientId_0
+2025-04-19 19:00:02.722 -07:00 [WRN] No orders found for client 0!
+2025-04-19 19:00:02.722 -07:00 [INF] Orders for client 0 recived!
+2025-04-19 19:00:02.723 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 19:00:02.726 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.AdminController.GetClientsOrdersAsync (Customer-And-Orders.API) in 14.3172ms
+2025-04-19 19:00:02.727 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.AdminController.GetClientsOrdersAsync (Customer-And-Orders.API)'
+2025-04-19 19:00:02.728 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/get-clients-orders/1 - 200 null application/json; charset=utf-8 24.3461ms
+2025-04-19 19:00:05.745 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/index.html - null null
+2025-04-19 19:00:05.756 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/index.html - 200 null text/html;charset=utf-8 10.7747ms
+2025-04-19 19:00:05.759 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_vs/browserLink - null null
+2025-04-19 19:00:05.759 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-19 19:00:05.764 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_framework/aspnetcore-browser-refresh.js - 200 13798 application/javascript; charset=utf-8 5.0594ms
+2025-04-19 19:00:05.771 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/_vs/browserLink - 200 null text/javascript; charset=UTF-8 11.3079ms
+2025-04-19 19:00:05.809 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - null null
+2025-04-19 19:00:05.816 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.4372ms
+2025-04-19 19:00:20.675 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7200/api/Auth/sign-in - application/json 49
+2025-04-19 19:00:20.677 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.AuthController.Login (Customer-And-Orders.API)'
+2025-04-19 19:00:20.679 -07:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Customer_And_Orders.BAL.Models.LoginUserDTO) on controller Customer_And_Orders.API.Controllers.AuthController (Customer-And-Orders.API).
+2025-04-19 19:00:20.682 -07:00 [INF] Signing in admin
+2025-04-19 19:00:20.682 -07:00 [INF] Trying to sign in admin
+2025-04-19 19:00:20.684 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[RefreshExpiry], [u].[RefreshToken], [u].[Role], [u].[Username]
+FROM [User] AS [u]
+WHERE [u].[Username] = @__username_0
+2025-04-19 19:00:20.809 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [User] SET [RefreshExpiry] = @p0, [RefreshToken] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2025-04-19 19:00:20.812 -07:00 [INF] User admin signed in successfuly
+2025-04-19 19:00:20.812 -07:00 [INF] User admin signed in!
+2025-04-19 19:00:20.813 -07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-19 19:00:20.815 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.AuthController.Login (Customer-And-Orders.API) in 134.7364ms
+2025-04-19 19:00:20.816 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.AuthController.Login (Customer-And-Orders.API)'
+2025-04-19 19:00:20.817 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7200/api/Auth/sign-in - 200 null application/json; charset=utf-8 142.52ms
+2025-04-19 19:00:29.250 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/get-clients-orders/1 - null null
+2025-04-19 19:00:29.252 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.AdminController.GetClientsOrdersAsync (Customer-And-Orders.API)'
+2025-04-19 19:00:29.256 -07:00 [INF] Route matched with {action = "GetClientsOrders", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetClientsOrdersAsync(Int32) on controller Customer_And_Orders.API.Controllers.AdminController (Customer-And-Orders.API).
+2025-04-19 19:00:29.258 -07:00 [INF] Request to get client's 1 orders
+2025-04-19 19:00:29.259 -07:00 [INF] Trying to get all client's 1 orders
+2025-04-19 19:00:29.260 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__clientId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__clientId_0
+2025-04-19 19:00:29.268 -07:00 [INF] Got orders for client 1 from database
+2025-04-19 19:00:29.268 -07:00 [INF] Orders for client 1 recived!
+2025-04-19 19:00:29.269 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 19:00:29.272 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.AdminController.GetClientsOrdersAsync (Customer-And-Orders.API) in 14.7231ms
+2025-04-19 19:00:29.273 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.AdminController.GetClientsOrdersAsync (Customer-And-Orders.API)'
+2025-04-19 19:00:29.274 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/get-clients-orders/1 - 200 null application/json; charset=utf-8 23.7035ms
+2025-04-19 19:00:34.015 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/get-clients-orders/2 - null null
+2025-04-19 19:00:34.017 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.AdminController.GetClientsOrdersAsync (Customer-And-Orders.API)'
+2025-04-19 19:00:34.019 -07:00 [INF] Route matched with {action = "GetClientsOrders", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetClientsOrdersAsync(Int32) on controller Customer_And_Orders.API.Controllers.AdminController (Customer-And-Orders.API).
+2025-04-19 19:00:34.021 -07:00 [INF] Request to get client's 2 orders
+2025-04-19 19:00:34.021 -07:00 [INF] Trying to get all client's 2 orders
+2025-04-19 19:00:34.024 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__clientId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__clientId_0
+2025-04-19 19:00:34.026 -07:00 [WRN] No orders found for client 2!
+2025-04-19 19:00:34.026 -07:00 [INF] Orders for client 2 recived!
+2025-04-19 19:00:34.027 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 19:00:34.028 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.AdminController.GetClientsOrdersAsync (Customer-And-Orders.API) in 7.0082ms
+2025-04-19 19:00:34.029 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.AdminController.GetClientsOrdersAsync (Customer-And-Orders.API)'
+2025-04-19 19:00:34.030 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/get-clients-orders/2 - 200 null application/json; charset=utf-8 15.2432ms
+2025-04-19 19:00:36.241 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/get-clients-orders/3 - null null
+2025-04-19 19:00:36.243 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.AdminController.GetClientsOrdersAsync (Customer-And-Orders.API)'
+2025-04-19 19:00:36.244 -07:00 [INF] Route matched with {action = "GetClientsOrders", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetClientsOrdersAsync(Int32) on controller Customer_And_Orders.API.Controllers.AdminController (Customer-And-Orders.API).
+2025-04-19 19:00:36.246 -07:00 [INF] Request to get client's 3 orders
+2025-04-19 19:00:36.247 -07:00 [INF] Trying to get all client's 3 orders
+2025-04-19 19:00:36.249 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__clientId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__clientId_0
+2025-04-19 19:00:36.250 -07:00 [WRN] No orders found for client 3!
+2025-04-19 19:00:36.251 -07:00 [INF] Orders for client 3 recived!
+2025-04-19 19:00:36.252 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 19:00:36.253 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.AdminController.GetClientsOrdersAsync (Customer-And-Orders.API) in 6.8829ms
+2025-04-19 19:00:36.254 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.AdminController.GetClientsOrdersAsync (Customer-And-Orders.API)'
+2025-04-19 19:00:36.255 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/get-clients-orders/3 - 200 null application/json; charset=utf-8 13.9151ms
+2025-04-19 19:00:37.189 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7200/get-clients-orders/1 - null null
+2025-04-19 19:00:37.191 -07:00 [INF] Executing endpoint 'Customer_And_Orders.API.Controllers.AdminController.GetClientsOrdersAsync (Customer-And-Orders.API)'
+2025-04-19 19:00:37.192 -07:00 [INF] Route matched with {action = "GetClientsOrders", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetClientsOrdersAsync(Int32) on controller Customer_And_Orders.API.Controllers.AdminController (Customer-And-Orders.API).
+2025-04-19 19:00:37.194 -07:00 [INF] Request to get client's 1 orders
+2025-04-19 19:00:37.194 -07:00 [INF] Trying to get all client's 1 orders
+2025-04-19 19:00:37.196 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__clientId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[CreatedAt], [o].[Description], [o].[Status], [o].[Title], [o].[UserId]
+FROM [Order] AS [o]
+WHERE [o].[UserId] = @__clientId_0
+2025-04-19 19:00:37.198 -07:00 [INF] Got orders for client 1 from database
+2025-04-19 19:00:37.199 -07:00 [INF] Orders for client 1 recived!
+2025-04-19 19:00:37.199 -07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Customer_And_Orders.DAL.Data.Entities.Order, Customer-And-Orders.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-19 19:00:37.200 -07:00 [INF] Executed action Customer_And_Orders.API.Controllers.AdminController.GetClientsOrdersAsync (Customer-And-Orders.API) in 6.7086ms
+2025-04-19 19:00:37.201 -07:00 [INF] Executed endpoint 'Customer_And_Orders.API.Controllers.AdminController.GetClientsOrdersAsync (Customer-And-Orders.API)'
+2025-04-19 19:00:37.202 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7200/get-clients-orders/1 - 200 null application/json; charset=utf-8 13.0417ms

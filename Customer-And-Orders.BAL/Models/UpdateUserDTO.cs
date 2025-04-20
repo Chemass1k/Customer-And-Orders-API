@@ -1,0 +1,11 @@
+﻿namespace Customer_And_Orders.BAL.Models
+{
+    public class UpdateUserDTO
+    {
+        public int Id { get; set; }
+        public string Username { get; set; }
+        public string? Email { get; set; }
+        public string? Role { get; set; }
+
+    }
+}

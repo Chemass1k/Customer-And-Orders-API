@@ -3,6 +3,7 @@ using Customer_And_Orders.BAL.Services.Interfaces;
 using Customer_And_Orders.DAL.Data.Entities;
 using Customer_And_Orders.DAL.Repositories.Intrefaces;
 using Microsoft.Extensions.Logging;
+using System.Security.Claims;
 
 namespace Customer_And_Orders.BAL.Services
 {
@@ -119,7 +120,8 @@ namespace Customer_And_Orders.BAL.Services
                     Id = order.Id,
                     Title = order.Title,
                     Description = order.Description,
-                    Status = order.Status
+                    Status = order.Status,
+                    UserId = (int)order.UserId
                 };
                 var result = await _repos.UpdateOrderAsync(newOrder);
                 if(result == null)

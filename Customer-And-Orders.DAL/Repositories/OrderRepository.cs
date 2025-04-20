@@ -3,6 +3,7 @@ using Customer_And_Orders.DAL.Data.Entities;
 using Customer_And_Orders.DAL.Repositories.Intrefaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using System.Runtime.CompilerServices;
 
 namespace Customer_And_Orders.DAL.Repositories
@@ -29,7 +30,7 @@ namespace Customer_And_Orders.DAL.Repositories
                     _log.LogWarning($"Order with id {id} isn't exist in database");
                     return false;
                 }
-                var result = _context.Order.Remove(order);
+                _context.Order.Remove(order);
                 await _context.SaveChangesAsync();
                 _log.LogInformation("Order deleted from database!");
                 return true;
@@ -53,7 +54,7 @@ namespace Customer_And_Orders.DAL.Repositories
                 if (!string.IsNullOrWhiteSpace(queryParams?.Status))
                     query = query.Where(o => o.Status == queryParams.Status);
 
-                if(!string.IsNullOrEmpty(queryParams?.Search))
+                if (!string.IsNullOrEmpty(queryParams?.Search))
                     query = query.Where(o => o.Title == queryParams.Search);
 
                 if (queryParams?.SortByDate == true)
@@ -71,7 +72,7 @@ namespace Customer_And_Orders.DAL.Repositories
                     .ToListAsync();
 
                 _log.LogInformation($"Recived all orders for user {userId}");
-                
+
                 return pagedOrders;
             }
             catch (Exception ex)
@@ -87,7 +88,7 @@ namespace Customer_And_Orders.DAL.Repositories
             {
                 _log.LogInformation($"Looking for order with id {id} in database");
                 var order = await _context.Order.FirstOrDefaultAsync(u => u.Id == id);
-                if(order == null)
+                if (order == null)
                 {
                     _log.LogWarning($"Order with Id: {id} is missing in database");
                     return null;
@@ -107,9 +108,18 @@ namespace Customer_And_Orders.DAL.Repositories
             try
             {
                 _log.LogInformation($"Updating order {order.Id}");
-                 _context.Order.Update(order);
+                _context.Order.Update(order);
                 _context.Entry(order).Property(x => x.CreatedAt).IsModified = false;
-                _context.Entry(order).Property(x => x.UserId).IsModified = false;
+
+                if (order.UserId == 0)
+                    _context.Entry(order).Property(x => x.UserId).IsModified = false;
+                if (order.Title.IsNullOrEmpty())
+                    _context.Entry(order).Property(x => x.Title).IsModified = false;
+                if(order.Description.IsNullOrEmpty())
+                    _context.Entry(order).Property(x => x.Description).IsModified = false;
+                if(order.Status.IsNullOrEmpty())
+                    _context.Entry(order).Property(x => x.Status).IsModified = false;
+
                 await _context.SaveChangesAsync();
                 _log.LogInformation($"Order with Id {order.Id} updated!");
                 return order;

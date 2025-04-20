@@ -3,6 +3,7 @@ using Customer_And_Orders.BAL.Services.Interfaces;
 using Customer_And_Orders.DAL.Data.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace Customer_And_Orders.API.Controllers
 {
@@ -30,7 +31,7 @@ namespace Customer_And_Orders.API.Controllers
         public async Task<IActionResult> DeleteOrderAsync([FromBody] int id)
         {
             var result = await _service.DeleteAsync(id);
-            if(!result)
+            if (!result)
                 return BadRequest(result);
             return Ok(result);
         }
@@ -38,18 +39,23 @@ namespace Customer_And_Orders.API.Controllers
         [HttpPut("update-order")]
         public async Task<IActionResult> UpdateOrderAsync([FromBody] UpdateOrderDTO order)
         {
+            var role = User.FindFirst(ClaimTypes.Role)?.Value;
+            var userId = role == "Admin"
+                ? order.UserId
+                : int.Parse(User.FindFirst("userId")!.Value);
+            order.UserId = userId;
             var result = await _service.UpdateOrderAsync(order);
-            if(result == null)
+            if (result == null)
                 return BadRequest();
             return Ok(result);
         }
 
         [HttpGet("get-all")]
-        public async Task<IActionResult> GetAllOrdersByUserIdAsync([FromQuery]QueryParams? queryParams)
+        public async Task<IActionResult> GetAllOrdersByUserIdAsync([FromQuery] QueryParams? queryParams)
         {
             var userId = int.Parse(User.FindFirst("userId")!.Value);
             var result = await _service.GetAllByUserIdAsync(userId, queryParams);
-            if(result == null)
+            if (result == null)
                 return NotFound();
             return Ok(result);
         }
@@ -57,9 +63,9 @@ namespace Customer_And_Orders.API.Controllers
         public async Task<IActionResult> GetOrderByIdAsync(int id)
         {
             var result = await _service.GetByIdAsync(id);
-            if(result == null)
+            if (result == null)
                 return NotFound();
             return Ok(result);
         }
     }
- }
+}

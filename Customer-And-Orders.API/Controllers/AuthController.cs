@@ -49,12 +49,5 @@ namespace Customer_And_Orders.API.Controllers
             }
 
         }
-
-        [Authorize]
-        [HttpGet("test")]
-        public async Task<IActionResult> Test()
-        {
-            return Ok("Works");
-        }
     }
 }

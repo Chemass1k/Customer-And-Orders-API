@@ -23,7 +23,7 @@ namespace Customer_And_Orders.API.Controllers
         }
 
         [HttpGet("get-clients-orders/{id}")]
-        public async Task<IActionResult> GetClientsOrdersAsync([FromQuery] int id)
+        public async Task<IActionResult> GetClientsOrdersAsync(int id)
         {
             var result = await _service.GetClientsOrdersAsync(id);
             return Ok(result);

@@ -1,5 +1,6 @@
 ﻿using Customer_And_Orders.BAL.Models;
 using Customer_And_Orders.BAL.Services.Interfaces;
+using Customer_And_Orders.DAL.Data.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
@@ -21,14 +22,32 @@ namespace Customer_And_Orders.API.Controllers
         public async Task<IActionResult> GetClientsAsync()
         {
             var result = await _service.GetClientsAsync();
-            return Ok(result);
+            if (result != null)
+            {
+                var response = new ApiResponse<IEnumerable<User>>(true, "List of clients is recieved!", result);
+                return Ok(response);
+            }
+            else
+            {
+                var response = new ApiResponse<string>(false, "No clients found", null);
+                return NotFound(response);
+            }
         }
 
         [HttpGet("get-clients-orders/{id}")]
         public async Task<IActionResult> GetClientsOrdersAsync(int id)
         {
             var result = await _service.GetClientsOrdersAsync(id);
-            return Ok(result);
+            if (result != null)
+            {
+                var response = new ApiResponse<IEnumerable<Order>>(true, $"Orders from client with id {id} are recieved!", result);
+                return Ok(response);
+            }
+            else
+            {
+                var response = new ApiResponse<string>(false, $"Orders for client with id {id} weren't found!", null);
+                return NotFound(response);
+            }
         }
 
         [HttpPut("update-clients-data")]

@@ -25,10 +25,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Middleware\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Customer-And-Orders.BAL\Customer-And-Orders.BAL.csproj" />
     <ProjectReference Include="..\Customer-And-Orders.DAL\Customer-And-Orders.DAL.csproj" />
   </ItemGroup>

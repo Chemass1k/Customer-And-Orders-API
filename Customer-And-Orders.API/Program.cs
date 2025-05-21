@@ -1,3 +1,4 @@
+using Customer_And_Orders.API.Middleware;
 using Customer_And_Orders.BAL.Services;
 using Customer_And_Orders.BAL.Services.Interfaces;
 using Customer_And_Orders.DAL.Data;
@@ -88,6 +89,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseMiddleware<ExceptionMiddleware>();
 app.UseAuthentication();
 app.UseAuthorization();
 

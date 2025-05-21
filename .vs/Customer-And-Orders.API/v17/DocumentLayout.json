@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\",
   "Documents": [
     {
@@ -39,10 +40,15 @@
       "RelativeMoniker": "D:0:0:{8220E462-68E4-4509-8184-E6C774F39875}|Customer-And-Orders.DAL\\Customer-And-Orders.DAL.csproj|solutionrelative:customer-and-orders.dal\\repositories\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
+=======
+  "WorkspaceRootPath": "E:\\Andrii\\Desktop\\git clone customer-and-orders\\Customer-And-Orders-API\\",
+  "Documents": [],
+>>>>>>> Added ApiResponse
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
+<<<<<<< HEAD
       "DocumentGroups": [
         {
           "DockedWidth": 1160,
@@ -178,6 +184,9 @@
           ]
         }
       ]
+=======
+      "DocumentGroups": []
+>>>>>>> Added ApiResponse
     }
   ]
 }

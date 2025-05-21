@@ -20,18 +20,29 @@ namespace Customer_And_Orders.API.Controllers
         public async Task<IActionResult> Register([FromBody] CreateUserDTO user)
         {
             var result = await _service.RegistrateAsync(user);
+            var okResponse = new ApiResponse<bool>(true, "Client registered!", result);
+            var badResponse = new ApiResponse<bool>(false, "Client is not registered", result);
             if (result)
-                return Ok(user);
+                return Ok(okResponse);
             else
-                return BadRequest();
+                return BadRequest(badResponse);
         }
 
         [HttpPost("sign-in")]
         public async Task<IActionResult> Login([FromBody] LoginUserDTO loginUser)
         {
             var (token, refreshToken) = await _service.LoginAsync(loginUser);
-            var tokens = new {token, refreshToken};
-            return Ok(tokens);
+            var tokens = new { token, refreshToken };
+            if (tokens != null)
+            {
+                var response = new ApiResponse<object>(true, "Tokens are recieved!", tokens);
+                return Ok(tokens);
+            }
+            else
+            {
+                var response = new ApiResponse<string>(false, "Tokens aren't recieved!", null);
+                return BadRequest(response);
+            }
         }
 
         [Authorize]
@@ -39,13 +50,15 @@ namespace Customer_And_Orders.API.Controllers
         public async Task<IActionResult> RefreshTokens([FromBody] string refreshToken)
         {
             var tokens = await _service.RefreshTokensAsync(refreshToken);
-            if(tokens != (null, null))
+            if (tokens != (null, null))
             {
-                return Ok($"Token: {tokens.AccessToken}, refreshToken: {tokens.RefreshToken}");
+                var response = new ApiResponse<object>(true, $"Token: {tokens.AccessToken}, refreshToken: {tokens.RefreshToken}", tokens);
+                return Ok(response);
             }
             else
             {
-                return BadRequest();
+                var response = new ApiResponse<string>(false, "Tokens aren't refreshed!", null);
+                return BadRequest(response);
             }
 
         }

@@ -23,8 +23,15 @@ namespace Customer_And_Orders.API.Controllers
         {
             var result = await _service.CreateOrderAsync(order);
             if (result == null)
-                return BadRequest();
-            return Ok(order);
+            {
+                var response = new ApiResponse<string>(false, "A new order hasn't created!", null);
+                return BadRequest(response);
+            }
+            else
+            {
+                var response = new ApiResponse<Order>(true, "A new order has created!", result);
+                return Ok(response);
+            }
         }
 
         [HttpDelete("delete-order")]
@@ -32,8 +39,16 @@ namespace Customer_And_Orders.API.Controllers
         {
             var result = await _service.DeleteAsync(id);
             if (!result)
-                return BadRequest(result);
-            return Ok(result);
+            {
+                var response = new ApiResponse<string>(false, "Order isn't deleted!", null);
+                return BadRequest(response);
+
+            }
+            else
+            {
+                var response = new ApiResponse<bool>(true, "Order is deleted!", result)''
+                return Ok(response);
+            }
         }
 
         [HttpPut("update-order")]
@@ -46,8 +61,15 @@ namespace Customer_And_Orders.API.Controllers
             order.UserId = userId;
             var result = await _service.UpdateOrderAsync(order);
             if (result == null)
-                return BadRequest();
-            return Ok(result);
+            {
+                var response = new ApiResponse<string>(false, "Order isn't updated!", null);
+                return BadRequest(response);
+            }
+            else
+            {
+                var response = new ApiResponse<Order>(true, "Order is updated!", result);
+                return Ok(response);
+            }
         }
 
         [HttpGet("get-all")]
@@ -56,16 +78,30 @@ namespace Customer_And_Orders.API.Controllers
             var userId = int.Parse(User.FindFirst("userId")!.Value);
             var result = await _service.GetAllByUserIdAsync(userId, queryParams);
             if (result == null)
-                return NotFound();
-            return Ok(result);
+            {
+                var response = new ApiResponse<string>(false, $"Orders for client with id {userId} aren't found!", null);
+                return NotFound(response);
+            }
+            else
+            {
+                var response = new ApiResponse<IEnumerable<Order>>(true, $"Orders for client with id {userId} are found!", result);
+                return Ok(response);
+            }
         }
         [HttpGet("get-by-id")]
         public async Task<IActionResult> GetOrderByIdAsync(int id)
         {
             var result = await _service.GetByIdAsync(id);
             if (result == null)
-                return NotFound();
-            return Ok(result);
+            {
+                var response = new ApiResponse<string>(false, $"Order with id {id} isn't found!", null);
+                return NotFound(response);
+            }
+            else
+            {
+                var response = new ApiResponse<Order>(true, $"Order with id {id} is found!", result);
+                return Ok(response);
+            }
         }
     }
 }

@@ -46,7 +46,7 @@ namespace Customer_And_Orders.API.Controllers
             }
             else
             {
-                var response = new ApiResponse<bool>(true, "Order is deleted!", result)''
+                var response = new ApiResponse<bool>(true, "Order is deleted!", result);
                 return Ok(response);
             }
         }

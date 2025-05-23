@@ -1,18 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\",
+  "WorkspaceRootPath": "E:\\Andrii\\Desktop\\git clone customer-and-orders\\Customer-And-Orders-API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6AD61934-B265-4E0E-A9ED-2CF1B223B523}|Customer-And-Orders.API\\Customer-And-Orders.API.csproj|e:\\andrii\\documents\\asp.net projects\\customer-and-orders.api\\customer-and-orders.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AD61934-B265-4E0E-A9ED-2CF1B223B523}|Customer-And-Orders.API\\Customer-And-Orders.API.csproj|solutionrelative:customer-and-orders.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8CBE01EC-5C33-4395-9035-B2037F7858A4}|Customer-And-Orders.Test\\Customer-And-Orders.Test.csproj|e:\\andrii\\desktop\\git clone customer-and-orders\\customer-and-orders-api\\customer-and-orders.test\\services\\authservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CBE01EC-5C33-4395-9035-B2037F7858A4}|Customer-And-Orders.Test\\Customer-And-Orders.Test.csproj|solutionrelative:customer-and-orders.test\\services\\authservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48B44692-3B0C-4AFF-B093-FBF090F00851}|Customer-And-Orders.BAL\\Customer-And-Orders.BAL.csproj|e:\\andrii\\documents\\asp.net projects\\customer-and-orders.api\\customer-and-orders.bal\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{48B44692-3B0C-4AFF-B093-FBF090F00851}|Customer-And-Orders.BAL\\Customer-And-Orders.BAL.csproj|e:\\andrii\\desktop\\git clone customer-and-orders\\customer-and-orders-api\\customer-and-orders.bal\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48B44692-3B0C-4AFF-B093-FBF090F00851}|Customer-And-Orders.BAL\\Customer-And-Orders.BAL.csproj|solutionrelative:customer-and-orders.bal\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48B44692-3B0C-4AFF-B093-FBF090F00851}|Customer-And-Orders.BAL\\Customer-And-Orders.BAL.csproj|e:\\andrii\\documents\\asp.net projects\\customer-and-orders.api\\customer-and-orders.bal\\models\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48B44692-3B0C-4AFF-B093-FBF090F00851}|Customer-And-Orders.BAL\\Customer-And-Orders.BAL.csproj|solutionrelative:customer-and-orders.bal\\models\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8CBE01EC-5C33-4395-9035-B2037F7858A4}|Customer-And-Orders.Test\\Customer-And-Orders.Test.csproj|e:\\andrii\\desktop\\git clone customer-and-orders\\customer-and-orders-api\\customer-and-orders.test\\services\\orderservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CBE01EC-5C33-4395-9035-B2037F7858A4}|Customer-And-Orders.Test\\Customer-And-Orders.Test.csproj|solutionrelative:customer-and-orders.test\\services\\orderservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AD61934-B265-4E0E-A9ED-2CF1B223B523}|Customer-And-Orders.API\\Customer-And-Orders.API.csproj|e:\\andrii\\desktop\\git clone customer-and-orders\\customer-and-orders-api\\customer-and-orders.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AD61934-B265-4E0E-A9ED-2CF1B223B523}|Customer-And-Orders.API\\Customer-And-Orders.API.csproj|solutionrelative:customer-and-orders.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CBE01EC-5C33-4395-9035-B2037F7858A4}|Customer-And-Orders.Test\\Customer-And-Orders.Test.csproj|e:\\andrii\\desktop\\git clone customer-and-orders\\customer-and-orders-api\\customer-and-orders.test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CBE01EC-5C33-4395-9035-B2037F7858A4}|Customer-And-Orders.Test\\Customer-And-Orders.Test.csproj|solutionrelative:customer-and-orders.test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AD61934-B265-4E0E-A9ED-2CF1B223B523}|Customer-And-Orders.API\\Customer-And-Orders.API.csproj|e:\\andrii\\desktop\\git clone customer-and-orders\\customer-and-orders-api\\customer-and-orders.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AD61934-B265-4E0E-A9ED-2CF1B223B523}|Customer-And-Orders.API\\Customer-And-Orders.API.csproj|solutionrelative:customer-and-orders.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AD61934-B265-4E0E-A9ED-2CF1B223B523}|Customer-And-Orders.API\\Customer-And-Orders.API.csproj|e:\\andrii\\desktop\\git clone customer-and-orders\\customer-and-orders-api\\customer-and-orders.api\\middleware\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AD61934-B265-4E0E-A9ED-2CF1B223B523}|Customer-And-Orders.API\\Customer-And-Orders.API.csproj|solutionrelative:customer-and-orders.api\\middleware\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AD61934-B265-4E0E-A9ED-2CF1B223B523}|Customer-And-Orders.API\\Customer-And-Orders.API.csproj|e:\\andrii\\desktop\\git clone customer-and-orders\\customer-and-orders-api\\customer-and-orders.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AD61934-B265-4E0E-A9ED-2CF1B223B523}|Customer-And-Orders.API\\Customer-And-Orders.API.csproj|solutionrelative:customer-and-orders.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,47 +41,122 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 944,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 998,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderServiceTest.cs",
+              "DocumentMoniker": "E:\\Andrii\\Desktop\\git clone customer-and-orders\\Customer-And-Orders-API\\Customer-And-Orders.Test\\Services\\OrderServiceTest.cs",
+              "RelativeDocumentMoniker": "Customer-And-Orders.Test\\Services\\OrderServiceTest.cs",
+              "ToolTip": "E:\\Andrii\\Desktop\\git clone customer-and-orders\\Customer-And-Orders-API\\Customer-And-Orders.Test\\Services\\OrderServiceTest.cs",
+              "RelativeToolTip": "Customer-And-Orders.Test\\Services\\OrderServiceTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T00:15:57.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthServiceTest.cs",
+              "DocumentMoniker": "E:\\Andrii\\Desktop\\git clone customer-and-orders\\Customer-And-Orders-API\\Customer-And-Orders.Test\\Services\\AuthServiceTest.cs",
+              "RelativeDocumentMoniker": "Customer-And-Orders.Test\\Services\\AuthServiceTest.cs",
+              "ToolTip": "E:\\Andrii\\Desktop\\git clone customer-and-orders\\Customer-And-Orders-API\\Customer-And-Orders.Test\\Services\\AuthServiceTest.cs",
+              "RelativeToolTip": "Customer-And-Orders.Test\\Services\\AuthServiceTest.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAowEoAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T00:15:49.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "E:\\Andrii\\Desktop\\git clone customer-and-orders\\Customer-And-Orders-API\\Customer-And-Orders.Test\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "Customer-And-Orders.Test\\UnitTest1.cs",
+              "ToolTip": "E:\\Andrii\\Desktop\\git clone customer-and-orders\\Customer-And-Orders-API\\Customer-And-Orders.Test\\UnitTest1.cs",
+              "RelativeToolTip": "Customer-And-Orders.Test\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T23:26:52.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "E:\\Andrii\\Desktop\\git clone customer-and-orders\\Customer-And-Orders-API\\Customer-And-Orders.API\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Customer-And-Orders.API\\Controllers\\OrderController.cs",
+              "ToolTip": "E:\\Andrii\\Desktop\\git clone customer-and-orders\\Customer-And-Orders-API\\Customer-And-Orders.API\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Customer-And-Orders.API\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAkwDAAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T20:37:53.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ExceptionMiddleware.cs",
+              "DocumentMoniker": "E:\\Andrii\\Desktop\\git clone customer-and-orders\\Customer-And-Orders-API\\Customer-And-Orders.API\\Middleware\\ExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "Customer-And-Orders.API\\Middleware\\ExceptionMiddleware.cs",
+              "ToolTip": "E:\\Andrii\\Desktop\\git clone customer-and-orders\\Customer-And-Orders-API\\Customer-And-Orders.API\\Middleware\\ExceptionMiddleware.cs",
+              "RelativeToolTip": "Customer-And-Orders.API\\Middleware\\ExceptionMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T20:55:13.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Andrii\\Desktop\\git clone customer-and-orders\\Customer-And-Orders-API\\Customer-And-Orders.API\\Program.cs",
+              "RelativeDocumentMoniker": "Customer-And-Orders.API\\Program.cs",
+              "ToolTip": "E:\\Andrii\\Desktop\\git clone customer-and-orders\\Customer-And-Orders-API\\Customer-And-Orders.API\\Program.cs",
+              "RelativeToolTip": "Customer-And-Orders.API\\Program.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAowF4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T20:50:22.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "E:\\Andrii\\Desktop\\git clone customer-and-orders\\Customer-And-Orders-API\\Customer-And-Orders.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Customer-And-Orders.API\\Controllers\\AuthController.cs",
+              "ToolTip": "E:\\Andrii\\Desktop\\git clone customer-and-orders\\Customer-And-Orders-API\\Customer-And-Orders.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Customer-And-Orders.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwDEAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T20:31:27.565Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 998,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "AuthService.cs",
-              "DocumentMoniker": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.BAL\\Services\\AuthService.cs",
+              "DocumentMoniker": "E:\\Andrii\\Desktop\\git clone customer-and-orders\\Customer-And-Orders-API\\Customer-And-Orders.BAL\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "Customer-And-Orders.BAL\\Services\\AuthService.cs",
-              "ToolTip": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.BAL\\Services\\AuthService.cs",
+              "ToolTip": "E:\\Andrii\\Desktop\\git clone customer-and-orders\\Customer-And-Orders-API\\Customer-And-Orders.BAL\\Services\\AuthService.cs",
               "RelativeToolTip": "Customer-And-Orders.BAL\\Services\\AuthService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAC4AAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACMAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T01:57:40.161Z",
+              "WhenOpened": "2025-05-23T00:21:36.092Z",
               "EditorCaption": ""
-            },
+            }
+          ]
+        },
+        {
+          "DockedWidth": 998,
+          "SelectedChildIndex": -1,
+          "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CreateUserDTO.cs",
-              "DocumentMoniker": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.BAL\\Models\\CreateUserDTO.cs",
-              "RelativeDocumentMoniker": "Customer-And-Orders.BAL\\Models\\CreateUserDTO.cs",
-              "ToolTip": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.BAL\\Models\\CreateUserDTO.cs",
-              "RelativeToolTip": "Customer-And-Orders.BAL\\Models\\CreateUserDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T01:57:26.413Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.API\\Program.cs",
-              "RelativeDocumentMoniker": "Customer-And-Orders.API\\Program.cs",
-              "ToolTip": "E:\\Andrii\\Documents\\ASP.Net Projects\\Customer-And-Orders.API\\Customer-And-Orders.API\\Program.cs",
-              "RelativeToolTip": "Customer-And-Orders.API\\Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAqwDUAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T01:55:14.221Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }
